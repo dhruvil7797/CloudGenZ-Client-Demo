@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>United in Pride - Community Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&family=Source+Serif+Pro:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="dashboard-header">
+        <div class="header-top">
+            <div class="logo">
+                <span class="rainbow-text">United in Pride</span>
+            </div>
+            <div class="header-actions">
+                <button class="action-btn">Notifications</button>
+                <button class="action-btn primary">Get Involved</button>
+            </div>
+        </div>
+        <nav class="dashboard-tabs">
+            <button class="tab-btn active" data-view="overview">Overview</button>
+            <button class="tab-btn" data-view="programs">Programs</button>
+            <button class="tab-btn" data-view="events">Events</button>
+            <button class="tab-btn" data-view="impact">Impact</button>
+        </nav>
+    </header>
+
+    <main class="dashboard-grid">
+        <!-- Welcome Widget -->
+        <div class="widget welcome-widget">
+            <div class="widget-content">
+                <h1>Welcome Back! 🌈</h1>
+                <p>Your community is thriving. Here's what's happening today.</p>
+                <div class="quick-stats">
+                    <div class="quick-stat">
+                        <span class="stat-number">127</span>
+                        <span class="stat-label">Active Members</span>
+                    </div>
+                    <div class="quick-stat">
+                        <span class="stat-number">8</span>
+                        <span class="stat-label">Events This Week</span>
+                    </div>
+                    <div class="quick-stat">
+                        <span class="stat-number">94%</span>
+                        <span class="stat-label">Satisfaction</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Impact Metrics -->
+        <div class="widget metrics-widget">
+            <div class="widget-header">
+                <h3>Community Impact</h3>
+                <span class="widget-badge">+12% this month</span>
+            </div>
+            <div class="widget-content">
+                <div class="metric-bars">
+                    <div class="metric-bar">
+                        <div class="bar-label">
+                            <span>Support Sessions</span>
+                            <strong>432</strong>
+                        </div>
+                        <div class="bar-track">
+                            <div class="bar-fill" data-percent="86" style="background: linear-gradient(90deg, #E6007E, #FF6B35);"></div>
+                        </div>
+                    </div>
+                    <div class="metric-bar">
+                        <div class="bar-label">
+                            <span>Workshop Attendance</span>
+                            <strong>289</strong>
+                        </div>
+                        <div class="bar-track">
+                            <div class="bar-fill" data-percent="72" style="background: linear-gradient(90deg, #FFD23F, #4ECDC4);"></div>
+                        </div>
+                    </div>
+                    <div class="metric-bar">
+                        <div class="bar-label">
+                            <span>Volunteer Hours</span>
+                            <strong>1,240</strong>
+                        </div>
+                        <div class="bar-track">
+                            <div class="bar-fill" data-percent="94" style="background: linear-gradient(90deg, #7B68EE, #FF69B4);"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Upcoming Events -->
+        <div class="widget events-widget">
+            <div class="widget-header">
+                <h3>Upcoming Events</h3>
+                <button class="view-all-btn">View All →</button>
+            </div>
+            <div class="widget-content">
+                <div class="event-list">
+                    <div class="event-item">
+                        <div class="event-date">
+                            <span class="date-day">12</span>
+                            <span class="date-month">MAR</span>
+                        </div>
+                        <div class="event-details">
+                            <h4>Pride Art Workshop</h4>
+                            <p>Creative expression through painting</p>
+                            <span class="event-time">6:00 PM - 8:00 PM</span>
+                        </div>
+                    </div>
+                    <div class="event-item">
+                        <div class="event-date">
+                            <span class="date-day">15</span>
+                            <span class="date-month">MAR</span>
+                        </div>
+                        <div class="event-details">
+                            <h4>Community Gathering</h4>
+                            <p>Monthly social meetup</p>
+                            <span class="event-time">7:00 PM - 9:00 PM</span>
+                        </div>
+                    </div>
+                    <div class="event-item">
+                        <div class="event-date">
+                            <span class="date-day">18</span>
+                            <span class="date-month">MAR</span>
+                        </div>
+                        <div class="event-details">
+                            <h4>Mental Health Support</h4>
+                            <p>Group therapy session</p>
+                            <span class="event-time">5:30 PM - 7:00 PM</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Active Programs -->
+        <div class="widget programs-widget">
+            <div class="widget-header">
+                <h3>Active Programs</h3>
+            </div>
+            <div class="widget-content">
+                <div class="program-grid">
+                    <div class="program-card" style="background: linear-gradient(135deg, #E6007E, #FF6B35);">
+                        <div class="program-icon">🎨</div>
+                        <h4>Creative Arts</h4>
+                        <p>12 participants</p>
+                    </div>
+                    <div class="program-card" style="background: linear-gradient(135deg, #FFD23F, #4ECDC4);">
+                        <div class="program-icon">💬</div>
+                        <h4>Peer Support</h4>
+                        <p>28 members</p>
+                    </div>
+                    <div class="program-card" style="background: linear-gradient(135deg, #7B68EE, #FF69B4);">
+                        <div class="program-icon">📚</div>
+                        <h4>Education</h4>
+                        <p>45 enrolled</p>
+                    </div>
+                    <div class="program-card" style="background: linear-gradient(135deg, #4ECDC4, #7B68EE);">
+                        <div class="program-icon">🏃</div>
+                        <h4>Wellness</h4>
+                        <p>33 active</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Resources Quick Access -->
+        <div class="widget resources-widget">
+            <div class="widget-header">
+                <h3>Quick Resources</h3>
+            </div>
+            <div class="widget-content">
+                <div class="resource-links">
+                    <a href="#" class="resource-link">
+                        <span class="resource-icon">📖</span>
+                        <span class="resource-name">Community Guidelines</span>
+                    </a>
+                    <a href="#" class="resource-link">
+                        <span class="resource-icon">🆘</span>
+                        <span class="resource-name">Crisis Support</span>
+                    </a>
+                    <a href="#" class="resource-link">
+                        <span class="resource-icon">📅</span>
+                        <span class="resource-name">Event Calendar</span>
+                    </a>
+                    <a href="#" class="resource-link">
+                        <span class="resource-icon">💼</span>
+                        <span class="resource-name">Job Board</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Announcements -->
+        <div class="widget announcements-widget">
+            <div class="widget-header">
+                <h3>Latest Announcements</h3>
+            </div>
+            <div class="widget-content">
+                <div class="announcement-list">
+                    <div class="announcement-item">
+                        <div class="announcement-badge new">NEW</div>
+                        <p><strong>Pride Month Planning:</strong> Join us for the organizing committee meeting next Tuesday!</p>
+                        <span class="announcement-time">2 hours ago</span>
+                    </div>
+                    <div class="announcement-item">
+                        <div class="announcement-badge">INFO</div>
+                        <p><strong>Facility Update:</strong> Our new youth lounge is now open for bookings.</p>
+                        <span class="announcement-time">1 day ago</span>
+                    </div>
+                    <div class="announcement-item">
+                        <div class="announcement-badge">CELEBRATE</div>
+                        <p><strong>Milestone Achieved:</strong> We've supported over 5,000 community members!</p>
+                        <span class="announcement-time">3 days ago</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Community Pulse -->
+        <div class="widget pulse-widget">
+            <div class="widget-header">
+                <h3>Community Pulse</h3>
+                <span class="pulse-indicator">● Live</span>
+            </div>
+            <div class="widget-content">
+                <div class="pulse-chart">
+                    <div class="pulse-item">
+                        <div class="pulse-label">😊 Happy</div>
+                        <div class="pulse-bar">
+                            <div class="pulse-fill" style="width: 78%; background: #4ECDC4;"></div>
+                        </div>
+                        <span class="pulse-value">78%</span>
+                    </div>
+                    <div class="pulse-item">
+                        <div class="pulse-label">💪 Supported</div>
+                        <div class="pulse-bar">
+                            <div class="pulse-fill" style="width: 92%; background: #7B68EE;"></div>
+                        </div>
+                        <span class="pulse-value">92%</span>
+                    </div>
+                    <div class="pulse-item">
+                        <div class="pulse-label">🌟 Empowered</div>
+                        <div class="pulse-bar">
+                            <div class="pulse-fill" style="width: 85%; background: #E6007E;"></div>
+                        </div>
+                        <span class="pulse-value">85%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Quick Actions -->
+        <div class="widget actions-widget">
+            <div class="widget-header">
+                <h3>Quick Actions</h3>
+            </div>
+            <div class="widget-content">
+                <div class="action-buttons">
+                    <button class="action-card">
+                        <span class="action-icon">📝</span>
+                        <span class="action-label">Register for Event</span>
+                    </button>
+                    <button class="action-card">
+                        <span class="action-icon">💝</span>
+                        <span class="action-label">Make Donation</span>
+                    </button>
+                    <button class="action-card">
+                        <span class="action-icon">👥</span>
+                        <span class="action-label">Volunteer Sign-Up</span>
+                    </button>
+                    <button class="action-card">
+                        <span class="action-icon">💬</span>
+                        <span class="action-label">Contact Support</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

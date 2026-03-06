@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>United in Pride — 2SLGBTQIA+ Community Centre, Ottawa</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Animated Gradient Mesh Background -->
+    <div class="gradient-mesh" aria-hidden="true">
+        <div class="mesh-layer mesh-layer-1"></div>
+        <div class="mesh-layer mesh-layer-2"></div>
+        <div class="mesh-layer mesh-layer-3"></div>
+    </div>
+
+    <!-- Floating Glass Pill Navbar -->
+    <nav class="glass-nav" role="navigation" aria-label="Main navigation">
+        <div class="nav-pill">
+            <a href="#" class="nav-logo" aria-label="United in Pride Home">
+                <svg class="logo-icon" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <circle cx="18" cy="18" r="16" stroke="url(#rainbowGrad)" stroke-width="2.5" fill="none"/>
+                    <path d="M12 22c0-6 6-10 6-10s6 4 6 10" stroke="url(#rainbowGrad)" stroke-width="2" stroke-linecap="round" fill="none"/>
+                    <circle cx="18" cy="14" r="3" fill="url(#rainbowGrad)"/>
+                    <defs>
+                        <linearGradient id="rainbowGrad" x1="0" y1="0" x2="36" y2="36">
+                            <stop offset="0%" stop-color="#ff6b6b"/>
+                            <stop offset="25%" stop-color="#ffd93d"/>
+                            <stop offset="50%" stop-color="#6bcb77"/>
+                            <stop offset="75%" stop-color="#4d96ff"/>
+                            <stop offset="100%" stop-color="#9b59b6"/>
+                        </linearGradient>
+                    </defs>
+                </svg>
+                <span class="logo-text">United in Pride</span>
+            </a>
+            <div class="nav-links" id="navLinks">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#programs" class="nav-link">Programs</a>
+                <a href="#gallery" class="nav-link">Gallery</a>
+                <a href="#events" class="nav-link">Events</a>
+                <a href="#testimonials" class="nav-link">Stories</a>
+                <a href="#donate" class="nav-link">Donate</a>
+            </div>
+            <a href="#donate" class="nav-cta">Support Us</a>
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+        <div class="mobile-menu-glass">
+            <a href="#about" class="mobile-link">About</a>
+            <a href="#programs" class="mobile-link">Programs</a>
+            <a href="#gallery" class="mobile-link">Gallery</a>
+            <a href="#events" class="mobile-link">Events</a>
+            <a href="#testimonials" class="mobile-link">Stories</a>
+            <a href="#donate" class="mobile-link-cta">Support Us</a>
+        </div>
+    </div>
+
+    <!-- Glass Announcement Banner -->
+    <div class="announcement-banner">
+        <div class="marquee-track">
+            <span class="marquee-content">
+                🏳️‍🌈 Pride Month Celebrations — Join us for events all June long! &nbsp;✦&nbsp;
+                Free counselling sessions available — Book now &nbsp;✦&nbsp;
+                Youth Leadership Summit registrations open &nbsp;✦&nbsp;
+                New housing support program launching July 2025 &nbsp;✦&nbsp;
+                🏳️‍🌈 Pride Month Celebrations — Join us for events all June long! &nbsp;✦&nbsp;
+                Free counselling sessions available — Book now &nbsp;✦&nbsp;
+                Youth Leadership Summit registrations open &nbsp;✦&nbsp;
+                New housing support program launching July 2025 &nbsp;✦&nbsp;
+            </span>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-glass-panel fade-in">
+            <span class="hero-badge">Ottawa's 2SLGBTQIA+ Community Centre</span>
+            <h1 class="hero-title">United in <span class="gradient-text">Pride</span></h1>
+            <p class="hero-subtitle">A safe, inclusive space where every identity is celebrated. We provide support, advocacy, and community for 2SLGBTQIA+ individuals and allies across Ottawa.</p>
+            <div class="hero-actions">
+                <a href="#programs" class="btn-glass-primary">Explore Programs</a>
+                <a href="#donate" class="btn-glass-secondary">Make a Donation</a>
+            </div>
+        </div>
+        <div class="stats-chips fade-in">
+            <div class="stat-chip" style="--tilt: -2deg">
+                <svg class="stat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                <span class="stat-number" data-target="15000">0</span>
+                <span class="stat-label">Community Members</span>
+            </div>
+            <div class="stat-chip" style="--tilt: 1.5deg">
+                <svg class="stat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                <span class="stat-number" data-target="200">0</span>
+                <span class="stat-label">Events Annually</span>
+            </div>
+            <div class="stat-chip" style="--tilt: -1deg">
+                <svg class="stat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                <span class="stat-number" data-target="50">0</span>
+                <span class="stat-label">Support Programs</span>
+            </div>
+            <div class="stat-chip" style="--tilt: 2.5deg">
+                <svg class="stat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                <span class="stat-number" data-target="25">0</span>
+                <span class="stat-label">Years of Service</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="section-header fade-in">
+            <span class="section-tag">Who We Are</span>
+            <h2 class="section-title">About Our Centre</h2>
+        </div>
+        <div class="about-grid">
+            <div class="about-text-panel glass-card fade-in">
+                <h3>Empowering Our Community Since 2000</h3>
+                <p>United in Pride has been a cornerstone of Ottawa's 2SLGBTQIA+ community for over 25 years. We provide a welcoming, affirming space where individuals of all gender identities, sexual orientations, and expressions can find support, connection, and celebration.</p>
+                <p>Our centre offers comprehensive programs ranging from mental health support and legal aid to cultural events and youth leadership development. We believe in the power of community to create lasting change.</p>
+                <p>Located in the heart of Ottawa, we serve over 15,000 community members annually through more than 200 events and 50+ dedicated support programs.</p>
+                <div class="about-highlights">
+                    <div class="highlight-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="20 6 9 17 4 12"/></svg>
+                        <span>Inclusive & Affirming Space</span>
+                    </div>
+                    <div class="highlight-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="20 6 9 17 4 12"/></svg>
+                        <span>Professional Support Services</span>
+                    </div>
+                    <div class="highlight-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="20 6 9 17 4 12"/></svg>
+                        <span>Community-Led Programming</span>
+                    </div>
+                </div>
+            </div>
+            <div class="about-visual-panel glass-card fade-in">
+                <svg class="about-pattern" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <defs>
+                        <linearGradient id="patGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#a855f7" stop-opacity="0.6"/>
+                            <stop offset="100%" stop-color="#6366f1" stop-opacity="0.3"/>
+                        </linearGradient>
+                        <linearGradient id="patGrad2" x1="100%" y1="0%" x2="0%" y2="100%">
+                            <stop offset="0%" stop-color="#ec4899" stop-opacity="0.5"/>
+                            <stop offset="100%" stop-color="#8b5cf6" stop-opacity="0.2"/>
+                        </linearGradient>
+                    </defs>
+                    <circle cx="200" cy="200" r="150" fill="none" stroke="url(#patGrad1)" stroke-width="1"/>
+                    <circle cx="200" cy="200" r="120" fill="none" stroke="url(#patGrad2)" stroke-width="1"/>
+                    <circle cx="200" cy="200" r="90" fill="none" stroke="url(#patGrad1)" stroke-width="1"/>
+                    <circle cx="200" cy="200" r="60" fill="none" stroke="url(#patGrad2)" stroke-width="1"/>
+                    <path d="M200 50 L200 350" stroke="url(#patGrad1)" stroke-width="0.5" opacity="0.5"/>
+                    <path d="M50 200 L350 200" stroke="url(#patGrad1)" stroke-width="0.5" opacity="0.5"/>
+                    <path d="M94 94 L306 306" stroke="url(#patGrad2)" stroke-width="0.5" opacity="0.5"/>
+                    <path d="M306 94 L94 306" stroke="url(#patGrad2)" stroke-width="0.5" opacity="0.5"/>
+                    <circle cx="200" cy="50" r="5" fill="#a855f7" opacity="0.7"/>
+                    <circle cx="200" cy="350" r="5" fill="#6366f1" opacity="0.7"/>
+                    <circle cx="50" cy="200" r="5" fill="#ec4899" opacity="0.7"/>
+                    <circle cx="350" cy="200" r="5" fill="#8b5cf6" opacity="0.7"/>
+                    <circle cx="94" cy="94" r="4" fill="#a855f7" opacity="0.5"/>
+                    <circle cx="306" cy="306" r="4" fill="#6366f1" opacity="0.5"/>
+                    <circle cx="306" cy="94" r="4" fill="#ec4899" opacity="0.5"/>
+                    <circle cx="94" cy="306" r="4" fill="#8b5cf6" opacity="0.5"/>
+                    <polygon points="200,110 240,180 160,180" fill="none" stroke="url(#patGrad1)" stroke-width="1.5" opacity="0.6"/>
+                    <polygon points="200,290 240,220 160,220" fill="none" stroke="url(#patGrad2)" stroke-width="1.5" opacity="0.6"/>
+                    <circle cx="200" cy="200" r="20" fill="url(#patGrad1)" opacity="0.3"/>
+                    <text x="200" y="207" text-anchor="middle" fill="white" font-size="14" font-family="Space Grotesk" opacity="0.8">✦</text>
+                </svg>
+                <div class="about-badge glass-card">
+                    <span class="badge-number">25+</span>
+                    <span class="badge-text">Years Serving Ottawa</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Programs Section -->
+    <section class="programs" id="programs">
+        <div class="section-header fade-in">
+            <span class="section-tag">What We Offer</span>
+            <h2 class="section-title">Our Programs</h2>
+        </div>
+        <div class="programs-grid">
+            <div class="program-card glass-card fade-in">
+                <div class="program-icon-circle" style="--accent: #f472b6">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                </div>
+                <h3 class="program-title">Youth Programs</h3>
+                <p class="program-desc">Safe spaces, mentorship, and leadership development for 2SLGBTQIA+ youth ages 13–24. Weekly meetups, skill workshops, and peer support groups.</p>
+                <a href="#" class="program-btn">Learn More</a>
+            </div>
+            <div class="program-card glass-card fade-in">
+                <div class="program-icon-circle" style="--accent: #a78bfa">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                </div>
+                <h3 class="program-title">Mental Health Support</h3>
+                <p class="program-desc">Free confidential counselling, support groups, and crisis intervention services with 2SLGBTQIA+-affirming therapists and counsellors.</p>
+                <a href="#" class="program-btn">Learn More</a>
+            </div>
+            <div class="program-card glass-card fade-in">
+                <div class="program-icon-circle" style="--accent: #60a5fa">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                </div>
+                <h3 class="program-title">Legal Aid Clinic</h3>
+                <p class="program-desc">Pro bono legal assistance for name changes, discrimination cases, immigration support, and human rights complaints.</p>
+                <a href="#" class="program-btn">Learn More</a>
+            </div>
+            <div class="program-card glass-card fade-in">
+                <div class="program-icon-circle" style="--accent: #34d399">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
+                </div>
+                <h3 class="program-title">Senior Connect</h3>
+                <p class="program-desc">Social programs, wellness activities, and peer support designed specifically for 2SLGBTQIA+ seniors and elders in our community.</p>
+                <a href="#" class="program-btn">Learn More</a>
+            </div>
+            <div class="program-card glass-card fade-in">
+                <div class="program-icon-circle" style="--accent: #fbbf24">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                </div>
+                <h3 class="program-title">Cultural Events</h3>
+                <p class="program-desc">Art exhibitions, film screenings, drag shows, open mic nights, and cultural celebrations that honour the diversity of our community.</p>
+                <a href="#" class="program-btn">Learn More</a>
+            </div>
+            <div class="program-card glass-card fade-in">
+                <div class="program-icon-circle" style="--accent: #fb923c">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                </div>
+                <h3 class="program-title">Housing Support</h3>
+                <p class="program-desc">Emergency shelter referrals, transitional housing assistance, and affordable housing navigation for community members in need.</p>
+                <a href="#" class="program-btn">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Donation Section -->
+    <section class="donate" id="donate">
+        <div class="section-header fade-in">
+            <span class="section-tag">Make a Difference</span>
+            <h2 class="section-title">Support Our Mission</h2>
+        </div>
+        <div class="donate-panel glass-card fade-in">
+            <div class="donate-info">
+                <h3>Help Us Reach Our Goal</h3>
+                <p>Your generous donation directly funds our programs, services, and advocacy work. Every dollar makes a difference in the lives of 2SLGBTQIA+ community members across Ottawa.</p>
+                <div class="progress-container">
+                    <div class="progress-labels">
+                        <span class="progress-raised">$32,500 raised</span>
+                        <span class="progress-goal">Goal: $50,000</span>
+                    </div>
+                    <div class="progress-bar-track">
+                        <div class="progress-bar-fill" data-progress="65"></div>
+                    </div>
+                    <span class="progress-percent">65% of goal reached</span>
+                </div>
+            </div>
+            <div class="donate-form">
+                <p class="donate-form-label">Select an amount:</p>
+                <div class="amount-pills">
+                    <button class="amount-pill" data-amount="25">$25</button>
+                    <button class="amount-pill active" data-amount="50">$50</button>
+                    <button class="amount-pill" data-amount="100">$100</button>
+                    <button class="amount-pill" data-amount="250">$250</button>
+                </div>
+                <div class="custom-amount-row">
+                    <span class="currency-symbol">$</span>
+                    <input type="number" class="custom-amount-input" id="customAmount" placeholder="Custom amount" min="1" aria-label="Enter custom donation amount">
+                </div>
+                <button class="donate-cta-btn" id="donateCta">
+                    <span>Donate Now</span>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery" id="gallery">
+        <div class="section-header fade-in">
+            <span class="section-tag">Our Community</span>
+            <h2 class="section-title">Gallery</h2>
+        </div>
+        <div class="bento-grid fade-in">
+            <div class="bento-item bento-large glass-card" style="--grad: linear-gradient(135deg, #a855f7, #6366f1)">
+                <span class="bento-label">Pride Parade 2024</span>
+            </div>
+            <div class="bento-item bento-tall glass-card" style="--grad: linear-gradient(135deg, #ec4899, #f472b6)">
+                <span class="bento-label">Community Mural</span>
+            </div>
+            <div class="bento-item glass-card" style="--grad: linear-gradient(135deg, #6366f1, #3b82f6)">
+                <span class="bento-label">Youth Workshop</span>
+            </div>
+            <div class="bento-item glass-card" style="--grad: linear-gradient(135deg, #14b8a6, #34d399)">
+                <span class="bento-label">Volunteer Day</span>
+            </div>
+            <div class="bento-item bento-wide glass-card" style="--grad: linear-gradient(135deg, #f59e0b, #fb923c)">
+                <span class="bento-label">Cultural Celebration</span>
+            </div>
+            <div class="bento-item glass-card" style="--grad: linear-gradient(135deg, #8b5cf6, #a855f7)">
+                <span class="bento-label">Art Exhibition</span>
+            </div>
+            <div class="bento-item bento-tall glass-card" style="--grad: linear-gradient(135deg, #ef4444, #f472b6)">
+                <span class="bento-label">Drag Night</span>
+            </div>
+            <div class="bento-item glass-card" style="--grad: linear-gradient(135deg, #06b6d4, #6366f1)">
+                <span class="bento-label">Support Group</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section class="events" id="events">
+        <div class="section-header fade-in">
+            <span class="section-tag">What's Coming Up</span>
+            <h2 class="section-title">Upcoming Events</h2>
+        </div>
+        <div class="events-scroll-wrapper fade-in">
+            <button class="events-scroll-btn events-scroll-left" aria-label="Scroll events left" id="eventsLeft">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
+            </button>
+            <div class="events-scroll" id="eventsScroll">
+                <article class="event-card glass-card">
+                    <div class="event-date-badge" style="--badge-color: #f472b6">
+                        <span class="event-month">JUN</span>
+                        <span class="event-day">15</span>
+                    </div>
+                    <div class="event-gradient" style="--egrad: linear-gradient(180deg, #a855f7, #6366f1)"></div>
+                    <div class="event-content">
+                        <h3 class="event-title">Pride in the Park</h3>
+                        <p class="event-desc">A full day of music, performances, food vendors, and community celebration in Confederation Park.</p>
+                        <div class="event-meta">
+                            <span>📍 Confederation Park</span>
+                            <span>🕐 10:00 AM – 8:00 PM</span>
+                        </div>
+                        <button class="event-register-btn">Register</button>
+                    </div>
+                </article>
+                <article class="event-card glass-card">
+                    <div class="event-date-badge" style="--badge-color: #a78bfa">
+                        <span class="event-month">JUN</span>
+                        <span class="event-day">22</span>
+                    </div>
+                    <div class="event-gradient" style="--egrad: linear-gradient(180deg, #ec4899, #a855f7)"></div>
+                    <div class="event-content">
+                        <h3 class="event-title">Youth Leadership Summit</h3>
+                        <p class="event-desc">A day of workshops, keynote speakers, and networking for 2SLGBTQIA+ youth leaders ages 16–24.</p>
+                        <div class="event-meta">
+                            <span>📍 Community Centre</span>
+                            <span>🕐 9:00 AM – 5:00 PM</span>
+                        </div>
+                        <button class="event-register-btn">Register</button>
+                    </div>
+                </article>
+                <article class="event-card glass-card">
+                    <div class="event-date-badge" style="--badge-color: #60a5fa">
+                        <span class="event-month">JUL</span>
+                        <span class="event-day">01</span>
+                    </div>
+                    <div class="event-gradient" style="--egrad: linear-gradient(180deg, #6366f1, #3b82f6)"></div>
+                    <div class="event-content">
+                        <h3 class="event-title">Community Art Exhibition</h3>
+                        <p class="event-desc">Showcasing works by local 2SLGBTQIA+ artists exploring identity, resilience, and joy. Opening night reception included.</p>
+                        <div class="event-meta">
+                            <span>📍 Gallery Space</span>
+                            <span>🕐 6:00 PM – 10:00 PM</span>
+                        </div>
+                        <button class="event-register-btn">Register</button>
+                    </div>
+                </article>
+                <article class="event-card glass-card">
+                    <div class="event-date-badge" style="--badge-color: #34d399">
+                        <span class="event-month">JUL</span>
+                        <span class="event-day">08</span>
+                    </div>
+                    <div class="event-gradient" style="--egrad: linear-gradient(180deg, #14b8a6, #6366f1)"></div>
+                    <div class="event-content">
+                        <h3 class="event-title">Rainbow Run 5K</h3>
+                        <p class="event-desc">A fun, colourful charity run through downtown Ottawa. All fitness levels welcome. Proceeds support youth programs.</p>
+                        <div class="event-meta">
+                            <span>📍 Major's Hill Park</span>
+                            <span>🕐 8:00 AM – 12:00 PM</span>
+                        </div>
+                        <button class="event-register-btn">Register</button>
+                    </div>
+                </article>
+            </div>
+            <button class="events-scroll-btn events-scroll-right" aria-label="Scroll events right" id="eventsRight">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+            </button>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="section-header fade-in">
+            <span class="section-tag">Community Voices</span>
+            <h2 class="section-title">Their Stories</h2>
+        </div>
+        <div class="testimonials-deck fade-in">
+            <div class="testimonial-stack">
+                <div class="testimonial-card glass-card active" data-index="0">
+                    <svg class="quote-icon" viewBox="0 0 24 24" fill="currentColor" opacity="0.15"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
+                    <p class="testimonial-text">"United in Pride gave me a second family. When I came out, I felt so alone. The youth program connected me with mentors and friends who understood exactly what I was going through. I wouldn't be who I am today without this community."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar" style="--avatar-color: #a855f7">
+                            <span>AK</span>
+                        </div>
+                        <div class="author-info">
+                            <span class="author-name">Alex K.</span>
+                            <span class="author-role">Youth Program Member</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card glass-card" data-index="1">
+                    <svg class="quote-icon" viewBox="0 0 24 24" fill="currentColor" opacity="0.15"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
+                    <p class="testimonial-text">"The legal aid clinic helped me navigate my name change process with dignity and respect. The lawyers here truly understand the unique challenges our community faces. I finally feel like my documents reflect who I really am."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar" style="--avatar-color: #ec4899">
+                            <span>MR</span>
+                        </div>
+                        <div class="author-info">
+                            <span class="author-name">Morgan R.</span>
+                            <span class="author-role">Legal Aid Client</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card glass-card" data-index="2">
+                    <svg class="quote-icon" viewBox="0 0 24 24" fill="currentColor" opacity="0.15"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
+                    <p class="testimonial-text">"As a trans senior, I spent decades feeling invisible. The Senior Connect program changed everything. I've found friendship, purpose, and a community that celebrates every part of who I am. It's never too late to find your people."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar" style="--avatar-color: #6366f1">
+                            <span>JP</span>
+                        </div>
+                        <div class="author-info">
+                            <span class="author-name">Jamie P.</span>
+                            <span class="author-role">Senior Connect Participant</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-dots" role="tablist" aria-label="Testimonial navigation">
+                <button class="dot active" data-slide="0" role="tab" aria-selected="true" aria-label="Testimonial 1"></button>
+                <button class="dot" data-slide="1" role="tab" aria-selected="false" aria-label="Testimonial 2"></button>
+                <button class="dot" data-slide="2" role="tab" aria-selected="false" aria-label="Testimonial 3"></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="footer">
+        <div class="footer-glass">
+            <div class="footer-grid">
+                <div class="footer-col footer-about">
+                    <a href="#" class="footer-logo">
+                        <svg class="footer-logo-icon" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <circle cx="18" cy="18" r="16" stroke="url(#rainbowGrad2)" stroke-width="2" fill="none"/>
+                            <path d="M12 22c0-6 6-10 6-10s6 4 6 10" stroke="url(#rainbowGrad2)" stroke-width="2" stroke-linecap="round" fill="none"/>
+                            <circle cx="18" cy="14" r="3" fill="url(#rainbowGrad2)"/>
+                            <defs>
+                                <linearGradient id="rainbowGrad2" x1="0" y1="0" x2="36" y2="36">
+                                    <stop offset="0%" stop-color="#ff6b6b"/>
+                                    <stop offset="50%" stop-color="#6bcb77"/>
+                                    <stop offset="100%" stop-color="#9b59b6"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                        <span>United in Pride</span>
+                    </a>
+                    <p class="footer-desc">Ottawa's 2SLGBTQIA+ Community Centre. A safe, inclusive space for everyone since 2000.</p>
+                    <div class="social-icons">
+                        <a href="#" class="social-circle" aria-label="Facebook">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                        </a>
+                        <a href="#" class="social-circle" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                        </a>
+                        <a href="#" class="social-circle" aria-label="Twitter">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg>
+                        </a>
+                        <a href="#" class="social-circle" aria-label="YouTube">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19.1c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" fill="#1a1a2e"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#programs">Programs</a></li>
+                        <li><a href="#events">Events</a></li>
+                        <li><a href="#donate">Donate</a></li>
+                        <li><a href="#">Volunteer</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-heading">Contact</h4>
+                    <ul class="footer-links footer-contact">
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                            <span>250 Bank Street, Ottawa, ON K2P 1X4</span>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                            <span>(613) 555-PRIDE</span>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                            <span>hello@unitedinpride.ca</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-heading">Newsletter</h4>
+                    <p class="newsletter-desc">Stay updated with our latest events, programs, and community news.</p>
+                    <form class="newsletter-form" id="newsletterForm">
+                        <input type="email" placeholder="Your email address" class="newsletter-input" required aria-label="Email for newsletter">
+                        <button type="submit" class="newsletter-btn">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 United in Pride. All rights reserved. Ottawa, Canada.</p>
+            </div>
+        </div>
+        <div class="rainbow-line" aria-hidden="true"></div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

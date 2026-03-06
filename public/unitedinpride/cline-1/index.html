@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>United in Pride - Split Screen Layout</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Fixed Left Navigation Panel -->
+    <nav class="side-nav">
+        <div class="nav-header">
+            <div class="logo-vertical">
+                <svg width="50" height="50" viewBox="0 0 40 40">
+                    <circle cx="20" cy="8" r="3" fill="#E6007E"/>
+                    <circle cx="30" cy="15" r="3" fill="#FF6B35"/>
+                    <circle cx="32" cy="25" r="3" fill="#FFD23F"/>
+                    <circle cx="25" cy="32" r="3" fill="#4ECDC4"/>
+                    <circle cx="15" cy="32" r="3" fill="#7B68EE"/>
+                    <circle cx="8" cy="25" r="3" fill="#FF69B4"/>
+                    <circle cx="10" cy="15" r="3" fill="#98D8C8"/>
+                </svg>
+                <span class="brand">UNITED</span>
+            </div>
+        </div>
+        <ul class="nav-links-vertical">
+            <li><a href="#hero" class="nav-dot active" data-section="hero">Home</a></li>
+            <li><a href="#about" class="nav-dot" data-section="about">About</a></li>
+            <li><a href="#programs" class="nav-dot" data-section="programs">Programs</a></li>
+            <li><a href="#impact" class="nav-dot" data-section="impact">Impact</a></li>
+            <li><a href="#events" class="nav-dot" data-section="events">Events</a></li>
+        </ul>
+        <button class="btn-donate-vertical">DONATE</button>
+    </nav>
+
+    <!-- Main Content Area -->
+    <main class="main-content">
+        <!-- Hero Split Section -->
+        <section id="hero" class="hero-split">
+            <div class="hero-left">
+                <div class="hero-content-box">
+                    <span class="hero-badge">2SLGBTQIA+ Community Centre</span>
+                    <h1 class="hero-title-split">
+                        Welcome to<br>
+                        <span class="gradient-text">United in Pride</span>
+                    </h1>
+                    <p class="hero-subtitle-split">A Safe Haven for 2SLGBTQIA+ Community in Ottawa</p>
+                    <div class="hero-stats-inline">
+                        <div class="stat-inline">
+                            <strong>2,500+</strong>
+                            <span>Members</span>
+                        </div>
+                        <div class="stat-inline">
+                            <strong>150+</strong>
+                            <span>Events</span>
+                        </div>
+                        <div class="stat-inline">
+                            <strong>$26K</strong>
+                            <span>Goal</span>
+                        </div>
+                    </div>
+                    <div class="hero-buttons-split">
+                        <button class="btn-primary-split">Explore Space</button>
+                        <button class="btn-outline-split">Get Involved →</button>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-right">
+                <div class="hero-image-container">
+                    <div class="floating-badge badge-1">🏳️‍🌈 Safe Space</div>
+                    <div class="floating-badge badge-2">Est. 2018</div>
+                    <div class="floating-badge badge-3">Ottawa</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section with Two Columns -->
+        <section id="about" class="about-split">
+            <div class="about-col-left">
+                <span class="section-label">Who We Are</span>
+                <h2 class="section-title-large">Community for <span class="highlight-rainbow">2SLGBTQIA+</span> Identities</h2>
+                <p class="about-lead">United in Pride is a community centre for 2SLGBTQIA+ and other oppressed sexual and gender identities and expressions.</p>
+            </div>
+            <div class="about-col-right">
+                <p class="about-paragraph">Located in Ottawa on unceded Algonquin territory, we offer resources, events, and social programming. Our work celebrates, supports, and prioritizes marginalized sexual orientations, gender identities, and expressions.</p>
+                <div class="features-list">
+                    <div class="feature-row">
+                        <div class="feature-icon-circle">✓</div>
+                        <div class="feature-text">
+                            <strong>Safe & Inclusive Environment</strong>
+                            <p>A judgment-free zone for everyone</p>
+                        </div>
+                    </div>
+                    <div class="feature-row">
+                        <div class="feature-icon-circle">✓</div>
+                        <div class="feature-text">
+                            <strong>Free Resources & Support</strong>
+                            <p>Access to community resources</p>
+                        </div>
+                    </div>
+                    <div class="feature-row">
+                        <div class="feature-icon-circle">✓</div>
+                        <div class="feature-text">
+                            <strong>Community Events & Programming</strong>
+                            <p>Regular gatherings and activities</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Programs Grid -->
+        <section id="programs" class="programs-grid-section">
+            <div class="section-header-center">
+                <span class="section-label">What We Offer</span>
+                <h2 class="section-title-large">Programs & Services</h2>
+            </div>
+            <div class="programs-grid-modern">
+                <div class="program-box" style="--accent: #E6007E">
+                    <div class="program-number">01</div>
+                    <h3>Art & Creativity</h3>
+                    <p>Express yourself through various art workshops and creative sessions.</p>
+                    <a href="#" class="program-arrow">→</a>
+                </div>
+                <div class="program-box featured-box" style="--accent: #4ECDC4">
+                    <div class="program-badge-small">Popular</div>
+                    <div class="program-number">02</div>
+                    <h3>Support Groups</h3>
+                    <p>Connect with others in safe, facilitated support group sessions.</p>
+                    <a href="#" class="program-arrow">→</a>
+                </div>
+                <div class="program-box" style="--accent: #7B68EE">
+                    <div class="program-number">03</div>
+                    <h3>Education</h3>
+                    <p>Workshops and training on LGBTQ+ topics and allyship.</p>
+                    <a href="#" class="program-arrow">→</a>
+                </div>
+                <div class="program-box" style="--accent: #FFD23F">
+                    <div class="program-number">04</div>
+                    <h3>Social Events</h3>
+                    <p>Fun gatherings, celebrations, and community building activities.</p>
+                    <a href="#" class="program-arrow">→</a>
+                </div>
+                <div class="program-box" style="--accent: #FF6B35">
+                    <div class="program-number">05</div>
+                    <h3>Wellness</h3>
+                    <p>Mental health resources and wellness programming.</p>
+                    <a href="#" class="program-arrow">→</a>
+                </div>
+                <div class="program-box" style="--accent: #FF69B4">
+                    <div class="program-number">06</div>
+                    <h3>Advocacy</h3>
+                    <p>Community organizing and advocacy initiatives.</p>
+                    <a href="#" class="program-arrow">→</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Impact/Donation Split -->
+        <section id="impact" class="impact-section-split">
+            <div class="impact-left-col">
+                <span class="section-label">Make an Impact</span>
+                <h2 class="section-title-large">Your Support <span class="highlight-rainbow">Matters</span></h2>
+                <p class="impact-text">At United in Pride, we believe in a world where everyone, especially 2SLGBTQ+ folks, has access to safety, community, and care.</p>
+                <div class="impact-examples">
+                    <div class="impact-item-row">
+                        <span class="impact-amount">$25</span>
+                        <span class="impact-desc">provides snacks for one event</span>
+                    </div>
+                    <div class="impact-item-row">
+                        <span class="impact-amount">$50</span>
+                        <span class="impact-desc">funds educational materials</span>
+                    </div>
+                    <div class="impact-item-row">
+                        <span class="impact-amount">$100</span>
+                        <span class="impact-desc">supports a full program</span>
+                    </div>
+                </div>
+            </div>
+            <div class="impact-right-col">
+                <div class="donation-box-modern">
+                    <div class="progress-section">
+                        <div class="progress-header">
+                            <span class="progress-raised">$14,645</span>
+                            <span class="progress-target">of $26,000</span>
+                        </div>
+                        <div class="progress-bar-modern">
+                            <div class="progress-fill-modern" style="width: 56%"></div>
+                        </div>
+                        <span class="progress-percent">56% funded</span>
+                    </div>
+                    <div class="donation-options">
+                        <button class="amount-option">$25</button>
+                        <button class="amount-option">$50</button>
+                        <button class="amount-option active">$75</button>
+                        <button class="amount-option">$100</button>
+                    </div>
+                    <button class="btn-donate-large-modern">Donate Now</button>
+                    <p class="tax-receipt">Tax receipts provided for all donations</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Events Timeline -->
+        <section id="events" class="events-timeline">
+            <div class="section-header-center">
+                <span class="section-label">Upcoming</span>
+                <h2 class="section-title-large">Events & Activities</h2>
+            </div>
+            <div class="events-list-modern">
+                <div class="event-card-modern">
+                    <div class="event-date-box">
+                        <span class="event-day-large">15</span>
+                        <span class="event-month-small">MAR</span>
+                    </div>
+                    <div class="event-info-modern">
+                        <h3>Art Workshop</h3>
+                        <p class="event-time-modern">6:00 PM - 8:00 PM</p>
+                        <p class="event-desc-modern">Express yourself through creative art activities</p>
+                    </div>
+                    <button class="event-btn-modern">RSVP</button>
+                </div>
+                <div class="event-card-modern featured-event-modern">
+                    <div class="event-featured-label">Featured</div>
+                    <div class="event-date-box">
+                        <span class="event-day-large">20</span>
+                        <span class="event-month-small">MAR</span>
+                    </div>
+                    <div class="event-info-modern">
+                        <h3>Community Dinner</h3>
+                        <p class="event-time-modern">5:30 PM - 7:30 PM</p>
+                        <p class="event-desc-modern">Join us for a special community gathering</p>
+                    </div>
+                    <button class="event-btn-modern">RSVP</button>
+                </div>
+                <div class="event-card-modern">
+                    <div class="event-date-box">
+                        <span class="event-day-large">25</span>
+                        <span class="event-month-small">MAR</span>
+                    </div>
+                    <div class="event-info-modern">
+                        <h3>Support Group</h3>
+                        <p class="event-time-modern">7:00 PM - 9:00 PM</p>
+                        <p class="event-desc-modern">Safe space for connection and support</p>
+                    </div>
+                    <button class="event-btn-modern">RSVP</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer-split">
+            <div class="footer-content-split">
+                <div class="footer-brand-split">
+                    <h3>United in Pride</h3>
+                    <p>A 2SLGBTQIA+ Community Centre in Ottawa</p>
+                    <div class="social-links-split">
+                        <a href="#" class="social-icon">📘</a>
+                        <a href="#" class="social-icon">📷</a>
+                        <a href="#" class="social-icon">🐦</a>
+                    </div>
+                </div>
+                <div class="footer-links-split">
+                    <div class="footer-col-split">
+                        <h4>About</h4>
+                        <a href="#">Our Story</a>
+                        <a href="#">Team</a>
+                        <a href="#">Accessibility</a>
+                    </div>
+                    <div class="footer-col-split">
+                        <h4>Get Involved</h4>
+                        <a href="#">Volunteer</a>
+                        <a href="#">Donate</a>
+                        <a href="#">Partner</a>
+                    </div>
+                    <div class="footer-col-split">
+                        <h4>Contact</h4>
+                        <a href="#">Visit Us</a>
+                        <a href="#">Email</a>
+                        <a href="#">Newsletter</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom-split">
+                <p>&copy; 2024 United in Pride. All rights reserved.</p>
+            </div>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

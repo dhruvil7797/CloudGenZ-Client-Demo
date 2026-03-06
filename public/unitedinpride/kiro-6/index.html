@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>United in Pride — 2SLGBTQIA+ Community Centre Ottawa</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Rainbow accent line -->
+  <div class="rainbow-accent" aria-hidden="true"></div>
+
+  <!-- Masthead navigation -->
+  <header class="masthead">
+    <div class="masthead__inner">
+      <a href="#" class="masthead__logo" aria-label="United in Pride home">
+        <span class="masthead__logo-icon">◇</span>
+        <span class="masthead__logo-text">United in Pride</span>
+      </a>
+
+      <nav class="masthead__nav" id="primaryNav" aria-label="Primary navigation">
+        <div class="masthead__pill-bar">
+          <a href="#about" class="masthead__pill">About</a>
+          <a href="#programmes" class="masthead__pill">Programmes</a>
+          <a href="#events-section" class="masthead__pill">Events</a>
+          <a href="#gallery-section" class="masthead__pill">Gallery</a>
+          <a href="#voices" class="masthead__pill">Voices</a>
+        </div>
+      </nav>
+
+      <div class="masthead__actions">
+        <a href="#give" class="masthead__donate-btn">Donate</a>
+        <button class="masthead__hamburger" id="hamburgerBtn" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile overlay nav -->
+    <div class="masthead__mobile-overlay" id="mobileOverlay">
+      <nav class="masthead__mobile-links" aria-label="Mobile navigation">
+        <a href="#about">About</a>
+        <a href="#programmes">Programmes</a>
+        <a href="#events-section">Events</a>
+        <a href="#gallery-section">Gallery</a>
+        <a href="#voices">Voices</a>
+        <a href="#give">Donate</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero: split layout -->
+  <section class="spread" aria-labelledby="spread-heading">
+    <div class="spread__inner">
+      <div class="spread__copy">
+        <p class="spread__kicker">Ottawa's 2SLGBTQIA+ Community Centre</p>
+        <h1 class="spread__headline" id="spread-heading">
+          <span class="spread__headline-line">A Safe</span>
+          <span class="spread__headline-line spread__headline-line--accent">Haven</span>
+          <span class="spread__headline-line">for All</span>
+        </h1>
+        <p class="spread__subtitle">Building community, fostering belonging, and celebrating every identity since 2018.</p>
+        <div class="spread__cta-row">
+          <a href="#give" class="spread__cta-primary">Support Us</a>
+          <a href="#about" class="spread__cta-secondary">Our Story →</a>
+        </div>
+      </div>
+      <div class="spread__visual" aria-hidden="true">
+        <div class="spread__image-placeholder"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ticker / marquee stats -->
+  <div class="ticker" aria-label="Community statistics">
+    <div class="ticker__track" id="tickerTrack">
+      <span class="ticker__item">2,500+ Members</span>
+      <span class="ticker__dot" aria-hidden="true">·</span>
+      <span class="ticker__item">150+ Events Annually</span>
+      <span class="ticker__dot" aria-hidden="true">·</span>
+      <span class="ticker__item">$26K Fundraising Goal</span>
+      <span class="ticker__dot" aria-hidden="true">·</span>
+      <span class="ticker__item">Certified Safe Space</span>
+      <span class="ticker__dot" aria-hidden="true">·</span>
+      <span class="ticker__item">Located on Unceded Algonquin Territory</span>
+      <span class="ticker__dot" aria-hidden="true">·</span>
+    </div>
+  </div>
+
+  <!-- About: pull-quote + body -->
+  <section class="editorial" id="about" aria-labelledby="editorial-heading">
+    <div class="editorial__inner">
+      <div class="editorial__pull-quote">
+        <blockquote>
+          <p>"Everyone deserves a place where they can be <em>unapologetically</em> themselves."</p>
+        </blockquote>
+      </div>
+      <div class="editorial__body">
+        <h2 class="editorial__heading" id="editorial-heading">Who We Are</h2>
+        <p>United in Pride is a community centre for 2SLGBTQIA+ and other oppressed sexual and gender identities. Located in Ottawa on unceded Algonquin territory, we provide a welcoming space where everyone can find support, connection, and celebration.</p>
+        <p>Since our founding, we've grown from a small gathering into a vibrant hub serving thousands of community members through programmes, events, and advocacy work that centres the most marginalized voices.</p>
+        <a href="#" class="editorial__read-more">Read our full story</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Programmes: horizontal scroll -->
+  <section class="programme-rail" id="programmes" aria-labelledby="programme-heading">
+    <div class="programme-rail__header">
+      <h2 class="programme-rail__title" id="programme-heading">Our Programmes</h2>
+      <div class="programme-rail__arrows">
+        <button class="programme-rail__arrow programme-rail__arrow--prev" id="progPrev" aria-label="Scroll programmes left">←</button>
+        <button class="programme-rail__arrow programme-rail__arrow--next" id="progNext" aria-label="Scroll programmes right">→</button>
+      </div>
+    </div>
+    <div class="programme-rail__track" id="programmeTrack">
+      <article class="programme-card">
+        <div class="programme-card__icon">🎨</div>
+        <h3 class="programme-card__title">Art &amp; Creativity</h3>
+        <p class="programme-card__desc">Express yourself through painting, sculpture, writing workshops, and collaborative art projects in a judgement-free studio.</p>
+      </article>
+      <article class="programme-card">
+        <div class="programme-card__icon">💬</div>
+        <h3 class="programme-card__title">Support Groups</h3>
+        <p class="programme-card__desc">Peer-led circles for sharing experiences, processing challenges, and building resilience together in a confidential setting.</p>
+      </article>
+      <article class="programme-card">
+        <div class="programme-card__icon">📚</div>
+        <h3 class="programme-card__title">Education</h3>
+        <p class="programme-card__desc">Workshops on queer history, allyship training, and skill-building sessions designed to empower and inform our community.</p>
+      </article>
+      <article class="programme-card">
+        <div class="programme-card__icon">🎉</div>
+        <h3 class="programme-card__title">Social Events</h3>
+        <p class="programme-card__desc">Game nights, potlucks, movie screenings, and seasonal celebrations that bring our community together in joy.</p>
+      </article>
+      <article class="programme-card">
+        <div class="programme-card__icon">🧘</div>
+        <h3 class="programme-card__title">Wellness</h3>
+        <p class="programme-card__desc">Yoga, meditation, counselling referrals, and holistic health programming centred on 2SLGBTQIA+ wellbeing.</p>
+      </article>
+      <article class="programme-card">
+        <div class="programme-card__icon">✊</div>
+        <h3 class="programme-card__title">Advocacy</h3>
+        <p class="programme-card__desc">Policy engagement, community organizing, and rights-based campaigns that amplify queer and trans voices in Ottawa.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Donation: centered single-column -->
+  <section class="give-block" id="give" aria-labelledby="give-heading">
+    <div class="give-block__inner">
+      <h2 class="give-block__heading" id="give-heading">Fuel the Movement</h2>
+      <p class="give-block__sub">Every dollar builds a safer, more vibrant community.</p>
+
+      <div class="give-block__progress-wrap">
+        <div class="give-block__progress-bar">
+          <div class="give-block__progress-fill" style="width: 56%;" role="progressbar" aria-valuenow="14645" aria-valuemin="0" aria-valuemax="26000" aria-label="Fundraising progress"></div>
+        </div>
+        <div class="give-block__progress-labels">
+          <span>$14,645 raised</span>
+          <span>$26,000 goal</span>
+        </div>
+      </div>
+
+      <div class="give-block__amounts" role="group" aria-label="Select donation amount">
+        <button class="give-block__amount" data-amount="25">$25</button>
+        <button class="give-block__amount give-block__amount--selected" data-amount="50">$50</button>
+        <button class="give-block__amount" data-amount="75">$75</button>
+        <button class="give-block__amount" data-amount="100">$100</button>
+      </div>
+
+      <button class="give-block__cta">Donate Now</button>
+      <p class="give-block__note">Tax receipts issued for donations over $20</p>
+    </div>
+  </section>
+
+  <!-- Gallery: CSS columns masonry -->
+  <section class="mosaic" id="gallery-section" aria-labelledby="mosaic-heading">
+    <h2 class="mosaic__heading" id="mosaic-heading">Community Moments</h2>
+    <div class="mosaic__grid">
+      <div class="mosaic__item mosaic__item--tall" aria-label="Community gathering">
+        <div class="mosaic__placeholder mosaic__placeholder--1"></div>
+        <span class="mosaic__caption">Pride March 2024</span>
+      </div>
+      <div class="mosaic__item" aria-label="Art workshop">
+        <div class="mosaic__placeholder mosaic__placeholder--2"></div>
+        <span class="mosaic__caption">Art Workshop</span>
+      </div>
+      <div class="mosaic__item mosaic__item--tall" aria-label="Support group session">
+        <div class="mosaic__placeholder mosaic__placeholder--3"></div>
+        <span class="mosaic__caption">Support Circle</span>
+      </div>
+      <div class="mosaic__item" aria-label="Community dinner">
+        <div class="mosaic__placeholder mosaic__placeholder--4"></div>
+        <span class="mosaic__caption">Community Dinner</span>
+      </div>
+      <div class="mosaic__item mosaic__item--tall" aria-label="Wellness session">
+        <div class="mosaic__placeholder mosaic__placeholder--5"></div>
+        <span class="mosaic__caption">Wellness Day</span>
+      </div>
+      <div class="mosaic__item" aria-label="Advocacy event">
+        <div class="mosaic__placeholder mosaic__placeholder--6"></div>
+        <span class="mosaic__caption">Advocacy Rally</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Events: timeline -->
+  <section class="chronicle" id="events-section" aria-labelledby="chronicle-heading">
+    <h2 class="chronicle__heading" id="chronicle-heading">Upcoming</h2>
+    <div class="chronicle__timeline">
+      <div class="chronicle__line" aria-hidden="true"></div>
+
+      <article class="chronicle__event">
+        <div class="chronicle__badge">
+          <span class="chronicle__badge-month">Mar</span>
+          <span class="chronicle__badge-day">15</span>
+        </div>
+        <div class="chronicle__details">
+          <h3 class="chronicle__event-title">Art Workshop: Queer Portraits</h3>
+          <p class="chronicle__event-time">Saturday, 2:00 PM – 5:00 PM</p>
+          <p class="chronicle__event-desc">Explore self-expression through portraiture with local queer artist Maya Chen. All skill levels welcome. Materials provided.</p>
+        </div>
+      </article>
+
+      <article class="chronicle__event">
+        <div class="chronicle__badge">
+          <span class="chronicle__badge-month">Mar</span>
+          <span class="chronicle__badge-day">20</span>
+        </div>
+        <div class="chronicle__details">
+          <h3 class="chronicle__event-title">Community Dinner: Taste of Home</h3>
+          <p class="chronicle__event-time">Thursday, 6:30 PM – 9:00 PM</p>
+          <p class="chronicle__event-desc">A potluck celebrating the diverse culinary traditions of our community. Bring a dish that tells your story.</p>
+        </div>
+      </article>
+
+      <article class="chronicle__event">
+        <div class="chronicle__badge">
+          <span class="chronicle__badge-month">Mar</span>
+          <span class="chronicle__badge-day">25</span>
+        </div>
+        <div class="chronicle__details">
+          <h3 class="chronicle__event-title">Support Group: Trans &amp; Non-Binary Circle</h3>
+          <p class="chronicle__event-time">Tuesday, 7:00 PM – 8:30 PM</p>
+          <p class="chronicle__event-desc">A confidential peer-support session facilitated by trained community members. New participants always welcome.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Testimonials: single large -->
+  <section class="voices" id="voices" aria-labelledby="voices-heading">
+    <div class="voices__inner">
+      <h2 class="voices__heading" id="voices-heading">Voices</h2>
+      <div class="voices__stage">
+        <div class="voices__quote-mark" aria-hidden="true">"</div>
+        <blockquote class="voices__blockquote">
+          <p class="voices__text">Finding United in Pride changed my life. For the first time, I walked into a room and didn't have to explain who I am. I just belonged. The support groups gave me courage I didn't know I had.</p>
+        </blockquote>
+        <div class="voices__attribution">
+          <span class="voices__author">Alex R.</span>
+          <span class="voices__role">Member since 2020</span>
+        </div>
+      </div>
+      <div class="voices__dots" aria-label="Testimonial indicators">
+        <span class="voices__dot voices__dot--active" aria-label="Testimonial 1, currently shown"></span>
+        <span class="voices__dot" aria-label="Testimonial 2"></span>
+        <span class="voices__dot" aria-label="Testimonial 3"></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer: two-column -->
+  <footer class="colophon">
+    <div class="colophon__inner">
+      <div class="colophon__brand">
+        <span class="colophon__logo">◇ United in Pride</span>
+        <p class="colophon__tagline">A Safe Haven for 2SLGBTQIA+ Community in Ottawa</p>
+      </div>
+      <nav class="colophon__links" aria-label="Footer navigation">
+        <a href="#about">About</a>
+        <span class="colophon__pipe" aria-hidden="true">|</span>
+        <a href="#">Team</a>
+        <span class="colophon__pipe" aria-hidden="true">|</span>
+        <a href="#">Accessibility</a>
+        <span class="colophon__pipe" aria-hidden="true">|</span>
+        <a href="#">Volunteer</a>
+        <span class="colophon__pipe" aria-hidden="true">|</span>
+        <a href="#give">Donate</a>
+        <span class="colophon__pipe" aria-hidden="true">|</span>
+        <a href="#">Partner</a>
+        <span class="colophon__pipe" aria-hidden="true">|</span>
+        <a href="#">Visit</a>
+        <span class="colophon__pipe" aria-hidden="true">|</span>
+        <a href="mailto:hello@unitedinpride.ca">Email</a>
+        <span class="colophon__pipe" aria-hidden="true">|</span>
+        <a href="#">Newsletter</a>
+      </nav>
+    </div>
+    <p class="colophon__copyright">© 2024 United in Pride. All rights reserved. Ottawa, Ontario, Canada.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
