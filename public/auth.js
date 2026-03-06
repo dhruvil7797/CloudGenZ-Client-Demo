@@ -1,14 +1,24 @@
 // User credentials and project mappings
 const users = {
-    'unitedinpride': {
+    'kindinspace': {
         password: 'pride2026',
-        redirectTo: 'unitedinpride/index.html',
-        projectName: 'United in Pride'
+        redirectTo: 'unitedinpride/',
+        projectName: 'unitedinpride'
     },
     'client1': {
         password: 'demo123',
-        redirectTo: 'unitedinpride/index.html',
-        projectName: 'United in Pride'
+        redirectTo: 'unitedinpride/',
+        projectName: 'unitedinpride'
+    },
+    'unitedinpride': {
+        password: 'pride2026',
+        redirectTo: 'unitedinpride/',
+        projectName: 'unitedinpride'
+    },
+    'uip': {
+        password: 'pride2026',
+        redirectTo: 'unitedinpride/',
+        projectName: 'unitedinpride'
     }
     // Add more users as needed
     // 'username': { password: 'password', redirectTo: 'project-folder/index.html', projectName: 'Project Name' }
