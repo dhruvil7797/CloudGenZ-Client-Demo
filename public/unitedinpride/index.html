@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>United in Pride - Design Gallery</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: linear-gradient(180deg, #f8f9fa 0%, #ffffff 100%);
+            color: #1a1a1a;
+            min-height: 100vh;
+            padding: 60px 20px;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 80px;
+            padding: 60px 20px;
+            background: white;
+            border-radius: 24px;
+            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
+        }
+
+        .header-eyebrow {
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: #667eea;
+            margin-bottom: 20px;
+        }
+
+        .header h1 {
+            font-size: clamp(36px, 5vw, 64px);
+            font-weight: 700;
+            margin-bottom: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            letter-spacing: -1.5px;
+        }
+
+        .header p {
+            font-size: 18px;
+            color: #64748b;
+            font-weight: 400;
+        }
+
+        .section-header {
+            margin: 60px 0 32px 0;
+            padding-left: 4px;
+        }
+
+        .section-header:first-of-type {
+            margin-top: 0;
+        }
+
+        .section-title {
+            font-size: 28px;
+            font-weight: 700;
+            color: #1a1a1a;
+            margin-bottom: 8px;
+            letter-spacing: -0.8px;
+        }
+
+        .section-subtitle {
+            font-size: 15px;
+            color: #64748b;
+            font-weight: 400;
+        }
+
+        .designs-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 28px;
+            margin-bottom: 60px;
+        }
+
+        .design-card {
+            position: relative;
+            background: white;
+            border: 1px solid #e2e8f0;
+            border-radius: 20px;
+            overflow: hidden;
+            text-decoration: none;
+            color: inherit;
+            display: flex;
+            flex-direction: column;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            cursor: pointer;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+        }
+
+        .design-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 160px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            opacity: 1;
+            transition: all 0.3s ease;
+        }
+
+        .design-card:hover {
+            transform: translateY(-8px);
+            border-color: #667eea;
+            box-shadow: 0 20px 40px rgba(102, 126, 234, 0.15);
+        }
+
+        .design-card:hover::before {
+            opacity: 0.95;
+            height: 170px;
+        }
+
+        .design-card-image {
+            position: relative;
+            height: 160px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 32px;
+        }
+
+        .design-number {
+            position: relative;
+            font-size: 72px;
+            font-weight: 800;
+            color: rgba(255, 255, 255, 0.3);
+            line-height: 1;
+            z-index: 1;
+        }
+
+        .design-card-content {
+            padding: 28px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+            background: white;
+        }
+
+        .design-card-title {
+            font-size: 20px;
+            font-weight: 600;
+            color: #1a1a1a;
+            letter-spacing: -0.4px;
+        }
+
+        .design-card-description {
+            font-size: 14px;
+            color: #64748b;
+            line-height: 1.7;
+            flex: 1;
+        }
+
+        .design-card-footer {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-top: 16px;
+            border-top: 1px solid #f1f5f9;
+        }
+
+        .design-card-badge {
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            color: #667eea;
+        }
+
+        .design-card-arrow {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background: #f1f5f9;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+            color: #64748b;
+            transition: all 0.3s ease;
+        }
+
+        .design-card:hover .design-card-arrow {
+            background: #667eea;
+            color: white;
+            transform: translateX(4px);
+        }
+
+        /* Variant colors for different series */
+        .design-card.cline::before {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+
+        .design-card.cline .design-card-badge {
+            color: #667eea;
+        }
+
+        .design-card.kiro::before {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+        }
+
+        .design-card.kiro .design-card-badge {
+            color: #f5576c;
+        }
+
+        .design-card.sample::before {
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+        }
+
+        .design-card.sample .design-card-badge {
+            color: #00adef;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 30px 16px;
+            }
+
+            .header {
+                margin-bottom: 50px;
+                padding: 40px 24px;
+            }
+
+            .section-header {
+                margin: 50px 0 24px 0;
+            }
+
+            .designs-grid {
+                grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+                gap: 20px;
+            }
+
+            .design-card-content {
+                padding: 24px;
+            }
+
+            .section-title {
+                font-size: 24px;
+            }
+        }
+
+        /* Loading animation */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .design-card {
+            animation: fadeInUp 0.6s ease-out backwards;
+        }
+
+        .design-card:nth-child(1) { animation-delay: 0.05s; }
+        .design-card:nth-child(2) { animation-delay: 0.1s; }
+        .design-card:nth-child(3) { animation-delay: 0.15s; }
+        .design-card:nth-child(4) { animation-delay: 0.2s; }
+        .design-card:nth-child(5) { animation-delay: 0.25s; }
+        .design-card:nth-child(6) { animation-delay: 0.3s; }
+        .design-card:nth-child(7) { animation-delay: 0.35s; }
+        .design-card:nth-child(8) { animation-delay: 0.4s; }
+        .design-card:nth-child(9) { animation-delay: 0.45s; }
+        .design-card:nth-child(10) { animation-delay: 0.5s; }
+
+        /* Subtle background pattern */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: 
+                radial-gradient(circle at 20% 30%, rgba(102, 126, 234, 0.03) 0%, transparent 50%),
+                radial-gradient(circle at 80% 70%, rgba(118, 75, 162, 0.03) 0%, transparent 50%);
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .container {
+            position: relative;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="header-eyebrow">Client Design Portfolio</div>
+            <h1>United in Pride</h1>
+            <p>Explore our collection of design concepts</p>
+        </div>
+
+        <div class="section-header">
+            <h2 class="section-title">Cline Design Series</h2>
+            <p class="section-subtitle">10 unique design explorations</p>
+        </div>
+        <div class="designs-grid" id="clineDesigns"></div>
+
+        <div class="section-header">
+            <h2 class="section-title">Kiro Design Series</h2>
+            <p class="section-subtitle">10 creative concepts</p>
+        </div>
+        <div class="designs-grid" id="kiroDesigns"></div>
+
+        <div class="section-header">
+            <h2 class="section-title">Sample Designs</h2>
+            <p class="section-subtitle">Reference implementations</p>
+        </div>
+        <div class="designs-grid" id="sampleDesigns"></div>
+    </div>
+
+    <script>
+        // Design data
+        const clineDesigns = [
+            { id: 1, name: 'Cline Design 1', folder: 'cline-1', description: 'Modern and minimalist approach with clean lines', series: 'cline' },
+            { id: 2, name: 'Cline Design 2', folder: 'cline-2', description: 'Bold and vibrant concept with dynamic elements', series: 'cline' },
+            { id: 3, name: 'Cline Design 3', folder: 'cline-3', description: 'Professional business style with refined aesthetics', series: 'cline' },
+            { id: 4, name: 'Cline Design 4', folder: 'cline-4', description: 'Creative and artistic vision with unique touches', series: 'cline' },
+            { id: 5, name: 'Cline Design 5', folder: 'cline-5', description: 'Clean and elegant design with subtle details', series: 'cline' },
+            { id: 6, name: 'Cline Design 6', folder: 'cline-6', description: 'Dynamic and interactive experience', series: 'cline' },
+            { id: 7, name: 'Cline Design 7', folder: 'cline-7', description: 'Contemporary with distinctive flair', series: 'cline' },
+            { id: 8, name: 'Cline Design 8', folder: 'cline-8', description: 'Sophisticated and refined presentation', series: 'cline' },
+            { id: 9, name: 'Cline Design 9', folder: 'cline-9', description: 'Energetic and engaging layout', series: 'cline' },
+            { id: 10, name: 'Cline Design 10', folder: 'cline-10', description: 'Innovative and unique approach', series: 'cline' }
+        ];
+
+        const kiroDesigns = [
+            { id: 1, name: 'Kiro Design 1', folder: 'kiro-1', description: 'Sleek and modern interface design', series: 'kiro' },
+            { id: 2, name: 'Kiro Design 2', folder: 'kiro-2', description: 'Vibrant color palette with bold choices', series: 'kiro' },
+            { id: 3, name: 'Kiro Design 3', folder: 'kiro-3', description: 'Professional corporate style layout', series: 'kiro' },
+            { id: 4, name: 'Kiro Design 4', folder: 'kiro-4', description: 'Creative storytelling through design', series: 'kiro' },
+            { id: 5, name: 'Kiro Design 5', folder: 'kiro-5', description: 'Minimal and effective presentation', series: 'kiro' },
+            { id: 6, name: 'Kiro Design 6', folder: 'kiro-6', description: 'Interactive experience with engagement', series: 'kiro' },
+            { id: 7, name: 'Kiro Design 7', folder: 'kiro-7', description: 'Modern with unique personality', series: 'kiro' },
+            { id: 8, name: 'Kiro Design 8', folder: 'kiro-8', description: 'Elegant and stylish approach', series: 'kiro' },
+            { id: 9, name: 'Kiro Design 9', folder: 'kiro-9', description: 'Bold and impactful visual design', series: 'kiro' },
+            { id: 10, name: 'Kiro Design 10', folder: 'kiro-10', description: 'Fresh and innovative concept', series: 'kiro' }
+        ];
+
+        const sampleDesigns = [
+            { id: 1, name: 'Sample Design', folder: 'sample', description: 'Reference implementation and design guidelines', series: 'sample' }
+        ];
+
+        // Function to create design card
+        function createDesignCard(design) {
+            return `
+                <a href="${design.folder}/index.html" class="design-card ${design.series}">
+                    <div class="design-card-image">
+                        <div class="design-number">${String(design.id).padStart(2, '0')}</div>
+                    </div>
+                    <div class="design-card-content">
+                        <h3 class="design-card-title">${design.name}</h3>
+                        <p class="design-card-description">${design.description}</p>
+                        <div class="design-card-footer">
+                            <span class="design-card-badge">View Design</span>
+                            <span class="design-card-arrow">→</span>
+                        </div>
+                    </div>
+                </a>
+            `;
+        }
+
+        // Render designs
+        document.getElementById('clineDesigns').innerHTML = clineDesigns.map(createDesignCard).join('');
+        document.getElementById('kiroDesigns').innerHTML = kiroDesigns.map(createDesignCard).join('');
+        document.getElementById('sampleDesigns').innerHTML = sampleDesigns.map(createDesignCard).join('');
+    </script>
+</body>
+</html>
