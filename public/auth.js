@@ -10,6 +10,16 @@ const users = {
         redirectTo: 'unitedinpride/',
         projectName: 'unitedinpride'
     },
+    'newlifeproject': {
+        password: 'newlife2026',
+        redirectTo: 'newlifeproject/',
+        projectName: 'newlifeproject'
+    },
+    'brenda': {
+        password: 'newlife2026',
+        redirectTo: 'newlifeproject/',
+        projectName: 'newlifeproject'
+    },
     // Add more users as needed
     // 'username': { password: 'password', redirectTo: 'project-folder/index.html', projectName: 'Project Name' }
 };
