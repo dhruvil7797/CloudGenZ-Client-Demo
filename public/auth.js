@@ -1,25 +1,15 @@
 // User credentials and project mappings
 const users = {
-    'kindinspace': {
-        password: 'pride2026',
-        redirectTo: 'unitedinpride/',
-        projectName: 'unitedinpride'
-    },
-    'client1': {
-        password: 'demo123',
-        redirectTo: 'unitedinpride/',
-        projectName: 'unitedinpride'
-    },
     'unitedinpride': {
         password: 'pride2026',
         redirectTo: 'unitedinpride/',
         projectName: 'unitedinpride'
     },
-    'uip': {
-        password: 'pride2026',
+    'dhruvil': {
+        password: 'admin@dhruvil',
         redirectTo: 'unitedinpride/',
         projectName: 'unitedinpride'
-    }
+    },
     // Add more users as needed
     // 'username': { password: 'password', redirectTo: 'project-folder/index.html', projectName: 'Project Name' }
 };
