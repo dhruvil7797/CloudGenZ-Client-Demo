@@ -20,6 +20,26 @@ const users = {
         redirectTo: 'newlifeproject/',
         projectName: 'newlifeproject'
     },
+    'growth91': {
+        password: 'growth2026',
+        redirectTo: 'growth91/',
+        projectName: 'growth91'
+    },
+    'g91admin': {
+        password: 'growth@91',
+        redirectTo: 'growth91/',
+        projectName: 'growth91'
+    },
+    'mtsc': {
+        password: 'mtsc2026',
+        redirectTo: 'mtsc/',
+        projectName: 'mtsc'
+    },
+    'mtscadmin': {
+        password: 'seafarers@2026',
+        redirectTo: 'mtsc/',
+        projectName: 'mtsc'
+    },
     // Add more users as needed
     // 'username': { password: 'password', redirectTo: 'project-folder/index.html', projectName: 'Project Name' }
 };

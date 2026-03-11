@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Growth91 — Dashboard Vista</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+<!-- APP SHELL: LEFT SIDEBAR + MAIN CONTENT -->
+<div class="app-shell">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar" id="sidebar">
+    <div class="sb-brand">
+      <svg width="20" height="20" viewBox="0 0 22 22" fill="none"><path d="M3 17L8 10L13 14L19 5" stroke="#f97316" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <span>Growth<b>91</b></span>
+    </div>
+    <nav class="sb-nav">
+      <a href="#hero" class="sn active"><span>🏠</span>Home</a>
+      <a href="#deals" class="sn"><span>💼</span>Live Deals</a>
+      <a href="#how" class="sn"><span>📋</span>How It Works</a>
+      <a href="#why" class="sn"><span>⭐</span>Why Us</a>
+      <a href="#founders" class="sn"><span>🚀</span>Founders</a>
+      <a href="#faq" class="sn"><span>❓</span>FAQ</a>
+    </nav>
+    <div class="sb-bottom">
+      <a href="#" class="sb-sign">Sign In</a>
+      <a href="#" class="sb-cta">Get Started</a>
+    </div>
+    <button id="mb-close">✕</button>
+  </aside>
+
+  <!-- MAIN AREA -->
+  <main class="main-area">
+
+    <!-- TOP BAR -->
+    <div class="topbar">
+      <button id="mb-open"><span></span><span></span><span></span></button>
+      <div class="tb-logo"><svg width="18" height="18" viewBox="0 0 22 22" fill="none"><path d="M3 17L8 10L13 14L19 5" stroke="#f97316" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Growth<b>91</b></div>
+      <div class="tb-right"><a href="#" class="tb-si">Sign In</a><a href="#" class="tb-cta">Get Started</a></div>
+    </div>
+
+    <!-- HERO PANEL -->
+    <section class="hero" id="hero">
+      <div class="hero-content">
+        <div class="hero-tag rv">🇮🇳 India's #1 Angel Investment Platform</div>
+        <h1 class="rv">Your Gateway to<br/><span>India's Fastest-Growing</span><br/>Startups</h1>
+        <p class="rv">Growth91 puts pre-vetted, high-potential Indian startup deals directly in your hands. SEBI-compliant, data-backed, and co-endorsed by India's top angels.</p>
+        <div class="hbtns rv">
+          <a href="#deals" class="btn-o">View Live Deals →</a>
+          <a href="#how" class="btn-g">How It Works</a>
+        </div>
+        <!-- MINI DASHBOARD CARDS -->
+        <div class="mini-dash rv">
+          <div class="md"><div class="md-v" data-t="75">0</div><div class="md-l">Startups Funded</div></div>
+          <div class="md"><div class="md-v" data-t="90">0</div><div class="md-l">% Success Rate</div></div>
+          <div class="md"><div class="md-v" data-t="1000">0</div><div class="md-l">Startups Analyzed</div></div>
+          <div class="md accent"><div class="md-v">₹42Cr</div><div class="md-l">Total Deployed</div></div>
+        </div>
+      </div>
+      <!-- RIGHT: Live activity panel -->
+      <div class="hero-panel rv">
+        <div class="panel-hdr"><span>📊 Live Portfolio Feed</span><span class="live-badge">● Live</span></div>
+        <div class="panel-deals">
+          <div class="pd"><div class="pd-ico">F</div><div class="pd-info"><b>FinAI Solutions</b><small>Seed · FinTech</small></div><div class="pd-stat"><span class="pct">72%</span><div class="pbar"><div style="width:72%"></div></div></div></div>
+          <div class="pd"><div class="pd-ico ht">H</div><div class="pd-info"><b>HealthStack</b><small>Pre-A · Health</small></div><div class="pd-stat"><span class="pct">45%</span><div class="pbar"><div style="width:45%"></div></div></div></div>
+          <div class="pd hot-pd"><div class="pd-ico ed">E</div><div class="pd-info"><b>EduVerse 🔥</b><small>Angel · EdTech</small></div><div class="pd-stat"><span class="pct hot">90%</span><div class="pbar hot"><div style="width:90%"></div></div></div></div>
+          <div class="pd"><div class="pd-ico ls">L</div><div class="pd-info"><b>LogiSmart</b><small>Seed · SaaS</small></div><div class="pd-stat"><span class="pct">28%</span><div class="pbar"><div style="width:28%"></div></div></div></div>
+        </div>
+        <a href="#deals" class="panel-link">View All 12 Active Deals →</a>
+        <div class="panel-trust"><span>🛡️ SEBI</span><span>🏆 Top Quartile</span></div>
+      </div>
+    </section>
+
+    <!-- TICKER -->
+    <div class="ticker"><div class="tt">
+      <span>EventBeep <b>↑2.1x</b></span><span>·</span><span>FootraX <b>↑3.4x</b></span><span>·</span><span>HumSafer <b>↑1.8x</b></span><span>·</span><span>ISN Sports <b>↑4.2x</b></span><span>·</span><span>MediConnect <b>↑5.1x</b></span><span>·</span>
+      <span>EventBeep <b>↑2.1x</b></span><span>·</span><span>FootraX <b>↑3.4x</b></span><span>·</span><span>HumSafer <b>↑1.8x</b></span><span>·</span><span>ISN Sports <b>↑4.2x</b></span><span>·</span><span>MediConnect <b>↑5.1x</b></span><span>·</span>
+    </div></div>
+
+    <!-- HOW IT WORKS -->
+    <section id="how" class="sec-w"><div class="ctr">
+      <p class="ey rv">Process</p><h2 class="rv">How Growth91 Works</h2>
+      <div class="stepper rv">
+        <div class="step"><div class="sn">01</div><div class="si">🔍</div><h3>Discover</h3><p>Browse 1,000+ curated startups filtered by sector, stage &amp; traction.</p></div>
+        <div class="step-arrow">→</div>
+        <div class="step"><div class="sn">02</div><div class="si">📋</div><h3>Verify</h3><p>Full DD reports, cap tables, and marquee angel endorsements.</p></div>
+        <div class="step-arrow">→</div>
+        <div class="step"><div class="sn">03</div><div class="si">💰</div><h3>Invest</h3><p>From ₹50,000 via SEBI-compliant escrow-protected instruments.</p></div>
+        <div class="step-arrow">→</div>
+        <div class="step"><div class="sn">04</div><div class="si">📈</div><h3>Track</h3><p>Real-time dashboard, quarterly MIS, and exit alerts.</p></div>
+      </div>
+    </div></section>
+
+    <!-- DEALS -->
+    <section id="deals" class="sec-blue"><div class="ctr">
+      <p class="ey rv">Active Deals</p><h2 class="white rv">Featured Investment Opportunities</h2>
+      <div class="chips rv"><button class="chip active">All</button><button class="chip">FinTech</button><button class="chip">HealthTech</button><button class="chip">EdTech</button><button class="chip">SaaS</button><button class="chip">D2C</button></div>
+      <div class="deal-grid rv">
+        <div class="dc feat"><div class="dct"><span class="db seed">Seed</span><span class="dsec">FinTech · AI</span></div><h3>FinAI Solutions</h3><p>AI credit scoring for India's 400M unbanked. 3 banking partnerships secured. Series A track.</p><div class="dms"><div><b>₹2 Cr</b><small>Target</small></div><div><b>72%</b><small>Filled</small></div><div><b>3.2x</b><small>Proj. Return</small></div></div><div class="dpb"><div style="width:72%"></div></div><a href="#" class="vd">View Deal →</a></div>
+        <div class="dc"><div class="dct"><span class="db ang">Angel</span><span class="dsec">EdTech</span></div><h3>EduVerse 🔥</h3><p>VR learning K-12. 90% retention vs 45% industry avg.</p><div class="dms"><div><b>₹1.5 Cr</b><small>Target</small></div><div><b style="color:#f97316">90%</b><small>Filled</small></div></div><div class="dpb hot"><div style="width:90%"></div></div><a href="#" class="vd" style="color:#f97316">🔥 Almost Full →</a></div>
+        <div class="dc"><div class="dct"><span class="db psa">Pre-A</span><span class="dsec">HealthTech</span></div><h3>HealthStack</h3><p>Telemedicine + diagnostics. 500K users in Tier-2 India.</p><div class="dms"><div><b>₹5 Cr</b><small>Target</small></div><div><b>45%</b><small>Filled</small></div></div><div class="dpb"><div style="width:45%"></div></div><a href="#" class="vd">View Deal →</a></div>
+        <div class="dc"><div class="dct"><span class="db seed">Seed</span><span class="dsec">SaaS</span></div><h3>LogiSmart</h3><p>Last-mile logistics SaaS. 150+ enterprise clients.</p><div class="dms"><div><b>₹3 Cr</b><small>Target</small></div><div><b>28%</b><small>Filled</small></div></div><div class="dpb"><div style="width:28%"></div></div><a href="#" class="vd">View Deal →</a></div>
+      </div>
+      <div style="text-align:center;margin-top:32px" class="rv"><a href="#" class="btn-w">View All 12 Active Deals →</a></div>
+    </div></section>
+
+    <!-- WHY -->
+    <section id="why" class="sec-w"><div class="ctr">
+      <p class="ey rv">Advantage</p><h2 class="rv">Why Growth91 Investors Win</h2>
+      <div class="why6">
+        <div class="w6 rv"><span>🎯</span><h3>Data-Driven</h3><p>AI + human analysis. Only top 5% make our list.</p></div>
+        <div class="w6 rv"><span>🔒</span><h3>SEBI Compliant</h3><p>All instruments SEBI-registered. Full escrow protection.</p></div>
+        <div class="w6 rv"><span>🤝</span><h3>We Co-Invest</h3><p>Our money is in every deal. We only win when you win.</p></div>
+        <div class="w6 rv"><span>📊</span><h3>Transparent</h3><p>Cap table, MIS, board minutes. Zero black boxes.</p></div>
+        <div class="w6 rv"><span>🌐</span><h3>Marquee Network</h3><p>Co-syndicated with top angels from Amazon, HSBC, global VCs.</p></div>
+        <div class="w6 rv"><span>🦄</span><h3>Unicorn Pipeline</h3><p>Exclusive access to India's next billion-dollar companies.</p></div>
+      </div>
+    </div></section>
+
+    <!-- FOUNDERS -->
+    <section id="founders" class="sec-blue2"><div class="ctr"><div class="dgrid">
+      <div class="dp inv rv"><span class="dtag">For Investors</span><h3>Build Wealth Through India's Startup Boom</h3><p>Pre-vetted deals from ₹50,000. Marquee co-investors. SEBI protection. Real-time visibility.</p><ul><li>✓ Curated deal flow</li><li>✓ Co-invest with top angels</li><li>✓ Full escrow protection</li><li>✓ Real-time tracking</li></ul><a href="#" class="btn-o">Start Investing →</a></div>
+      <div class="dp fnd rv"><span class="dtag dt2">For Founders</span><h3>Raise Your Round in 60 Days</h3><p>5,000+ investors. Full legal support. Expert pitch review. Zero extra cost.</p><ul><li>✓ 5,000+ investor reach</li><li>✓ DD support included</li><li>✓ Pitch deck review</li><li>✓ 60-day timeline</li></ul><a href="#" class="btn-b">Apply to Raise →</a></div>
+    </div></div></section>
+
+    <!-- TESTIMONIALS -->
+    <section class="sec-w"><div class="ctr">
+      <p class="ey rv">Trusted By</p><h2 class="rv">What Investors Say</h2>
+      <div class="tg3">
+        <div class="tc rv"><div class="ts">★★★★★</div><p>"Exceptional caliber. Every deal is a genuine potential game-changer."</p><div class="ta"><div class="av" style="background:linear-gradient(135deg,#1a1069,#f97316)">PR</div><div><b>Prakash Rohera</b><small>Corporate Trainer</small></div></div></div>
+        <div class="tc feat rv"><div class="ts">★★★★★</div><p>"Insider access to exclusive deals. Like having your own investment intelligence team."</p><div class="ta"><div class="av" style="background:linear-gradient(135deg,#0891b2,#22c55e)">HS</div><div><b>Hirish Shipurkar</b><small>Head India, HSBC Bank</small></div></div></div>
+        <div class="tc rv"><div class="ts">★★★★★</div><p>"World-class opportunities. Market knowledge that is completely unparalleled."</p><div class="ta"><div class="av" style="background:linear-gradient(135deg,#16a34a,#059669)">JT</div><div><b>Jaison Titus</b><small>Engineer, Amazon AWS</small></div></div></div>
+      </div>
+    </div></section>
+
+    <!-- FAQ -->
+    <section id="faq" class="sec-light"><div class="ctr fwrap">
+      <div class="fl rv"><p class="ey">FAQ</p><h2>Common Questions</h2><a href="#" class="btn-b" style="margin-top:20px;display:inline-flex">Contact Us →</a></div>
+      <div class="fr rv">
+        <div class="fi"><button class="fq">Where does my money go?<span>+</span></button><div class="fa">SEBI-monitored escrow — released only after deal target is fully met.</div></div>
+        <div class="fi"><button class="fq">How do I track my investment?<span>+</span></button><div class="fa">Real-time cap table, quarterly MIS, and valuation reports from each startup.</div></div>
+        <div class="fi"><button class="fq">How long before returns?<span>+</span></button><div class="fa">Typically 5-8 years via IPO, acquisition, or secondary sale.</div></div>
+        <div class="fi"><button class="fq">What's the minimum investment?<span>+</span></button><div class="fa">₹50,000 per deal — making startup investing accessible to all serious investors.</div></div>
+      </div>
+    </div></section>
+
+    <!-- CTA -->
+    <section class="cta-sec"><div class="ctr"><div class="ci rv"><h2>Ready to Invest in India's Future?</h2><p>Join 5,000+ investors already building wealth through India's startup ecosystem.</p><div class="cbtns"><a href="#" class="btn-o">Get Started Free →</a><a href="#" class="btn-g">Talk to an Advisor</a></div></div></div></section>
+
+    <!-- FOOTER -->
+    <footer><div class="ctr">
+      <div class="fg"><div class="fb"><div class="fl2"><svg width="16" height="16" viewBox="0 0 22 22" fill="none"><path d="M3 17L8 10L13 14L19 5" stroke="#f97316" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Growth91</div><p>India's Premier Startup Investment Platform. SEBI Compliant.</p><div class="ftr"><span>🛡️ SEBI</span><span>🏆 Top Quartile</span></div><div class="fsoc"><a href="#">𝕏</a><a href="#">in</a><a href="#">ig</a></div></div>
+      <div class="fc"><h5>Invest</h5><a href="#">Browse Deals</a><a href="#">Future Unicorns</a><a href="#">How It Works</a><a href="#">Portfolio Tracker</a></div>
+      <div class="fc"><h5>Founders</h5><a href="#">Raise Capital</a><a href="#">Apply Now</a><a href="#">Resources</a><a href="#">Success Stories</a></div>
+      <div class="fc"><h5>Company</h5><a href="#">About Us</a><a href="#">Blog</a><a href="#">Careers</a><a href="#">Contact</a></div></div>
+      <div class="fbot"><p>© 2026 Growth91. All Rights Reserved. SEBI Registered.</p><p>Designed by <strong>CloudGenZ</strong></p></div>
+    </div></footer>
+
+  </main>
+</div>
+<script src="script.js"></script>
+</body></html>

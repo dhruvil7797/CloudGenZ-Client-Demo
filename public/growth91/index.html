@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Growth91 — Design Gallery</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{font-family:'Inter',system-ui,sans-serif;background:#0a0614;color:#fff;min-height:100vh}
+    .header{background:rgba(10,6,20,.96);border-bottom:1px solid rgba(255,255,255,.08);padding:20px clamp(20px,4vw,48px);display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;position:sticky;top:0;z-index:100;backdrop-filter:blur(12px)}
+    .brand{display:flex;align-items:center;gap:12px}
+    .brand-icon{width:40px;height:40px;border-radius:10px;background:linear-gradient(135deg,#1a1069,#f97316);display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0}
+    .brand-name{font-size:16px;font-weight:700;color:#fff;letter-spacing:-.3px}
+    .brand-sub{font-size:11px;color:rgba(255,255,255,.45);margin-top:1px}
+    .badge{background:rgba(249,115,22,.15);border:1px solid rgba(249,115,22,.3);border-radius:20px;padding:5px 14px;font-size:12px;font-weight:500;color:#f97316;display:flex;align-items:center;gap:6px}
+    .dot{width:6px;height:6px;border-radius:50%;background:#f97316;animation:pulse 2s ease infinite}
+    @keyframes pulse{0%,100%{opacity:.4}50%{opacity:1}}
+    .main{max-width:1280px;margin:0 auto;padding:48px clamp(20px,4vw,48px) 80px}
+    .page-title{font-size:clamp(22px,3.5vw,32px);font-weight:800;margin-bottom:6px;background:linear-gradient(135deg,#fff,rgba(255,255,255,.6));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+    .page-sub{font-size:13px;color:rgba(255,255,255,.38);margin-bottom:36px}
+    .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px}
+    .card{background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.08);border-radius:16px;overflow:hidden;text-decoration:none;color:inherit;display:flex;flex-direction:column;transition:all .25s ease}
+    .card:hover{box-shadow:0 12px 40px rgba(249,115,22,.15);border-color:rgba(249,115,22,.3);transform:translateY(-4px)}
+    .thumb{height:160px;position:relative;overflow:hidden;flex-shrink:0}
+    .thumb-num{position:absolute;bottom:12px;left:14px;font-size:11px;font-weight:700;color:rgba(255,255,255,.6);letter-spacing:.08em;text-transform:uppercase}
+    .thumb-tag{position:absolute;top:10px;right:10px;background:rgba(0,0,0,.4);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,.15);border-radius:20px;padding:3px 10px;font-size:10px;font-weight:600;color:rgba(255,255,255,.85);letter-spacing:.04em;text-transform:uppercase}
+    .info{padding:16px 18px;display:flex;align-items:center;justify-content:space-between;gap:8px;border-top:1px solid rgba(255,255,255,.06)}
+    .info-name{font-size:15px;font-weight:600;color:#fff}
+    .info-sub{font-size:11px;color:rgba(255,255,255,.35);margin-top:3px;font-weight:400}
+    .arrow{width:28px;height:28px;border-radius:50%;background:rgba(249,115,22,.15);display:flex;align-items:center;justify-content:center;font-size:13px;color:#f97316;flex-shrink:0;transition:all .2s}
+    .card:hover .arrow{background:#f97316;color:#fff}
+    .footer{border-top:1px solid rgba(255,255,255,.08);padding:24px clamp(20px,4vw,48px);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px}
+    .footer p{font-size:12px;color:rgba(255,255,255,.25)}
+    @media(max-width:600px){.grid{grid-template-columns:1fr;gap:12px}}
+  </style>
+</head>
+<body>
+  <div class="header">
+    <div class="brand">
+      <div class="brand-icon">📈</div>
+      <div>
+        <div class="brand-name">Growth91</div>
+        <div class="brand-sub">Homepage Redesigns by CloudGenZ</div>
+      </div>
+    </div>
+    <div class="badge"><div class="dot"></div><span id="cnt">8 Designs</span></div>
+  </div>
+
+  <div class="main">
+    <div class="page-title">Growth91 — Homepage Design Concepts</div>
+    <div class="page-sub" id="lbl">8 unique homepage layouts · India's Premier Startup Investment Platform · Theme: Deep Indigo + Orange + White</div>
+    <div class="grid" id="grid"></div>
+  </div>
+
+  <div class="footer">
+    <p>Growth91 × CloudGenZ Technologies Pvt Ltd</p>
+    <p>© 2026 CloudGenZ Technologies Pvt Ltd</p>
+  </div>
+
+  <script>
+    const designs = [
+      {
+        folder:'design1',name:'Centered Command',
+        sub:'Full-width centered hero · Stats bar · Bento grid deals',
+        tag:'Centered Hero',
+        bg:'linear-gradient(160deg,#0e0b4e 0%,#1a1069 50%,rgba(249,115,22,.4) 100%)'
+      },
+      {
+        folder:'design2',name:'Split Vision',
+        sub:'50/50 split hero · Zigzag alternating sections · Card deals',
+        tag:'Split Hero',
+        bg:'linear-gradient(135deg,#0e0b4e 0%,#1a1069 50%,#f8f9ff 100%)'
+      },
+      {
+        folder:'design3',name:'Kinetic Edge',
+        sub:'Giant full-viewport text hero · Horizontal scroll deals · Alternating panels',
+        tag:'Kinetic Text',
+        bg:'linear-gradient(150deg,#0a084a 0%,#1a1069 50%,rgba(249,115,22,.3) 100%)'
+      },
+      {
+        folder:'design4',name:'Editorial Bold',
+        sub:'Mega number stats left · Headline right · Deal table rows',
+        tag:'Editorial',
+        bg:'linear-gradient(160deg,#0e0b4e 0%,#1a1069 60%,rgba(249,115,22,.5) 100%)'
+      },
+      {
+        folder:'design5',name:'Dashboard Vista',
+        sub:'Left sidebar navigation · App-shell layout · Live portfolio panel',
+        tag:'Dashboard',
+        bg:'linear-gradient(160deg,#0e0b4e,#1a1069,rgba(249,115,22,.2))'
+      },
+      {
+        folder:'design6',name:'Bold Blocks',
+        sub:'Two-block hero blue+orange · Alternating why sections',
+        tag:'Two-Block',
+        bg:'linear-gradient(135deg,#0e0b4e 60%,#f97316 100%)'
+      },
+      {
+        folder:'design7',name:'Minimal Clarity',
+        sub:'Clean white centered hero · Trust bar · Data-table deals',
+        tag:'Minimal White',
+        bg:'linear-gradient(160deg,#f8f9ff 0%,#e8eaff 40%,#1a1069 100%)'
+      },
+      {
+        folder:'design8',name:'Social Proof First',
+        sub:'Testimonials in hero · Investor count panel · Conversion CTA',
+        tag:'Social Proof',
+        bg:'linear-gradient(160deg,#0e0b4e 0%,#1a1069 55%,rgba(249,115,22,.35) 100%)'
+      },
+    ];
+
+    document.getElementById('cnt').textContent = designs.length + ' Designs';
+    document.getElementById('lbl').textContent = designs.length + ' unique homepage layouts · India\'s Premier Startup Investment Platform · Theme: Deep Indigo + Orange + White';
+
+    document.getElementById('grid').innerHTML = designs.map((d,i)=>`
+      <a href="${d.folder}/" class="card">
+        <div class="thumb" style="background:${d.bg}">
+          <div class="thumb-num">${String(i+1).padStart(2,'0')} — ${d.name}</div>
+          <div class="thumb-tag">${d.tag}</div>
+        </div>
+        <div class="info">
+          <div>
+            <div class="info-name">${d.name}</div>
+            <div class="info-sub">${d.sub}</div>
+          </div>
+          <div class="arrow">→</div>
+        </div>
+      </a>`).join('');
+  </script>
+</body>
+</html>

@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Mission to Seafarers Canada — Design Gallery</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{font-family:'Inter',system-ui,sans-serif;background:#0d1540;color:#fff;min-height:100vh}
+
+    .header{background:rgba(13,21,64,.96);border-bottom:1px solid rgba(255,255,255,.08);padding:20px clamp(20px,4vw,48px);display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;position:sticky;top:0;z-index:100;backdrop-filter:blur(12px)}
+    .brand{display:flex;align-items:center;gap:14px}
+    .brand-icon{width:44px;height:44px;border-radius:12px;background:linear-gradient(135deg,#1c2e6b,#e05a2b);display:flex;align-items:center;justify-content:center;font-size:20px;color:#fff;flex-shrink:0}
+    .brand-name{font-size:16px;font-weight:800;color:#fff;letter-spacing:-.3px}
+    .brand-sub{font-size:11px;color:rgba(255,255,255,.45);margin-top:2px}
+    .badge{background:rgba(224,90,43,.15);border:1px solid rgba(224,90,43,.35);border-radius:20px;padding:6px 16px;font-size:12px;font-weight:600;color:#e05a2b;display:flex;align-items:center;gap:8px}
+    .dot{width:7px;height:7px;border-radius:50%;background:#e05a2b;animation:pulse 2s ease infinite}
+    @keyframes pulse{0%,100%{opacity:.4}50%{opacity:1}}
+
+    .hero-strip{background:linear-gradient(135deg,#1c2e6b 0%,#2d3580 50%,rgba(224,90,43,.25) 100%);padding:48px clamp(20px,4vw,48px) 52px;border-bottom:1px solid rgba(255,255,255,.08)}
+    .hero-strip-inner{max-width:1280px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:32px;flex-wrap:wrap}
+    .hero-text h1{font-size:clamp(26px,4vw,40px);font-weight:800;margin-bottom:8px;background:linear-gradient(135deg,#fff,rgba(255,255,255,.7));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+    .hero-text p{font-size:14px;color:rgba(255,255,255,.55);max-width:480px;line-height:1.6}
+    .hero-meta{display:flex;align-items:center;gap:24px;flex-wrap:wrap}
+    .hm-item{display:flex;flex-direction:column;align-items:center;gap:4px}
+    .hm-num{font-size:32px;font-weight:800;color:#e05a2b}
+    .hm-lbl{font-size:11px;color:rgba(255,255,255,.5);font-weight:600;letter-spacing:.5px;text-transform:uppercase}
+
+    .main{max-width:1280px;margin:0 auto;padding:48px clamp(20px,4vw,48px) 80px}
+    .section-label{font-size:11px;font-weight:700;color:rgba(255,255,255,.35);letter-spacing:2px;text-transform:uppercase;margin-bottom:20px;display:flex;align-items:center;gap:10px}
+    .section-label::after{content:'';flex:1;height:1px;background:rgba(255,255,255,.08)}
+
+    .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:20px}
+    .card{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.09);border-radius:18px;overflow:hidden;text-decoration:none;color:inherit;display:flex;flex-direction:column;transition:all .28s ease;position:relative}
+    .card:hover{box-shadow:0 16px 48px rgba(224,90,43,.2);border-color:rgba(224,90,43,.4);transform:translateY(-6px)}
+
+    .thumb{height:180px;position:relative;overflow:hidden;flex-shrink:0;display:flex;align-items:center;justify-content:center}
+    .thumb-content{position:relative;z-index:2;display:flex;flex-direction:column;align-items:center;gap:8px}
+    .thumb-icon{font-size:40px;opacity:.9}
+    .thumb-title{font-size:13px;font-weight:700;color:rgba(255,255,255,.9);letter-spacing:.5px}
+    .thumb-num{position:absolute;bottom:12px;left:14px;font-size:10px;font-weight:700;color:rgba(255,255,255,.5);letter-spacing:1px;text-transform:uppercase;z-index:2}
+    .thumb-tag{position:absolute;top:10px;right:10px;background:rgba(0,0,0,.45);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,.15);border-radius:20px;padding:4px 11px;font-size:10px;font-weight:700;color:rgba(255,255,255,.9);letter-spacing:.5px;text-transform:uppercase;z-index:2}
+
+    .info{padding:18px 20px;display:flex;align-items:flex-start;justify-content:space-between;gap:10px;border-top:1px solid rgba(255,255,255,.06);flex:1}
+    .info-left{flex:1}
+    .info-name{font-size:15.5px;font-weight:700;color:#fff;margin-bottom:4px}
+    .info-sub{font-size:11.5px;color:rgba(255,255,255,.38);line-height:1.5;font-weight:400}
+    .arrow{width:30px;height:30px;border-radius:50%;background:rgba(224,90,43,.15);display:flex;align-items:center;justify-content:center;font-size:13px;color:#e05a2b;flex-shrink:0;margin-top:2px;transition:all .2s}
+    .card:hover .arrow{background:#e05a2b;color:#fff;transform:translateX(2px)}
+
+    .footer{border-top:1px solid rgba(255,255,255,.07);padding:24px clamp(20px,4vw,48px);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px}
+    .footer p{font-size:12px;color:rgba(255,255,255,.22)}
+
+    @media(max-width:640px){.grid{grid-template-columns:1fr;gap:14px}.hero-meta{gap:16px}}
+  </style>
+</head>
+<body>
+  <div class="header">
+    <div class="brand">
+      <div class="brand-icon"><i class="fas fa-anchor"></i></div>
+      <div>
+        <div class="brand-name">Mission to Seafarers Canada</div>
+        <div class="brand-sub">Homepage Redesigns by CloudGenZ</div>
+      </div>
+    </div>
+    <div class="badge"><div class="dot"></div><span>7 Design Concepts</span></div>
+  </div>
+
+  <div class="hero-strip">
+    <div class="hero-strip-inner">
+      <div class="hero-text">
+        <h1>MTSC — Homepage Redesign Concepts</h1>
+        <p>7 distinct layout approaches for mtsc.ca — each using exact MTSC brand colors (Navy #2d3580 + Coral #e05a2b), same icons, and content. Only the layout changes.</p>
+      </div>
+      <div class="hero-meta">
+        <div class="hm-item"><span class="hm-num">7</span><span class="hm-lbl">Designs</span></div>
+        <div class="hm-item"><span class="hm-num" style="color:#7b8cce">✓</span><span class="hm-lbl">Brand Colors</span></div>
+        <div class="hm-item"><span class="hm-num" style="color:#7b8cce">✓</span><span class="hm-lbl">Same Icons</span></div>
+        <div class="hm-item"><span class="hm-num" style="color:#7b8cce">✓</span><span class="hm-lbl">All Content</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="main">
+    <div class="section-label">All Design Concepts</div>
+    <div class="grid" id="grid"></div>
+  </div>
+
+  <div class="footer">
+    <p>Mission to Seafarers Canada × CloudGenZ Technologies Pvt Ltd</p>
+    <p>© 2026 CloudGenZ Technologies Pvt Ltd · Confidential Client Preview</p>
+  </div>
+
+  <script>
+    const designs = [
+      {
+        folder:'design1',
+        name:'Oceanic Elegance',
+        sub:'Classic centered hero · Animated counters · Glass service cards · Auto-scroll supporters',
+        tag:'Classic Clean',
+        icon:'🌊',
+        bg:'linear-gradient(160deg,#1c2e6b 0%,#2d3580 50%,rgba(224,90,43,.35) 100%)'
+      },
+      {
+        folder:'design2',
+        name:'Coastal Bold',
+        sub:'Dark navy split hero · Bento grid services · Stats strip · Pill supporters',
+        tag:'Split Hero',
+        icon:'⚓',
+        bg:'linear-gradient(135deg,#1c2e6b 0%,#2d3580 45%,rgba(224,90,43,.5) 100%)'
+      },
+      {
+        folder:'design3',
+        name:'Maritime Minimal',
+        sub:'Ultra-clean whitespace · Frosted nav · Numbered services · Bordered cards',
+        tag:'Minimalist',
+        icon:'🧭',
+        bg:'linear-gradient(160deg,#2d3580 0%,#7b8cce 60%,#f5f5f7 100%)'
+      },
+      {
+        folder:'design4',
+        name:'Deep Blue Cinematic',
+        sub:'Dark navy dominant · Glassmorphic cards · Cinematic stat display · Grain texture',
+        tag:'Dark Mode',
+        icon:'🚢',
+        bg:'linear-gradient(150deg,#0b1235 0%,#111b4a 50%,rgba(224,90,43,.2) 100%)'
+      },
+      {
+        folder:'design5',
+        name:'Warm Harbor',
+        sub:'Coral-pale hero · Photo stack card · Warm grid services · Round buttons',
+        tag:'Warm Tones',
+        icon:'🏝️',
+        bg:'linear-gradient(140deg,#fdf0eb 0%,rgba(224,90,43,.3) 40%,#1c2e6b 100%)'
+      },
+      {
+        folder:'design6',
+        name:'Corporate Trust',
+        sub:'Side-panel hero · Structured columns · Trust badges · Professional grid',
+        tag:'Corporate',
+        icon:'🏛️',
+        bg:'linear-gradient(160deg,#f4f5f8 0%,#dde0ec 40%,#2d3580 100%)'
+      },
+      {
+        folder:'design7',
+        name:'Modern Maritime',
+        sub:'Giant outlined headline · Dark overlay hero · Bento asymmetric · Circle stats',
+        tag:'Bold Statement',
+        icon:'🗺️',
+        bg:'linear-gradient(150deg,#1c2e6b 0%,#2d3580 40%,rgba(224,90,43,.4) 100%)'
+      }
+    ];
+
+    document.getElementById('grid').innerHTML = designs.map((d,i)=>`
+      <a href="${d.folder}/" class="card">
+        <div class="thumb" style="background:${d.bg}">
+          <div class="thumb-content">
+            <span class="thumb-icon">${d.icon}</span>
+            <span class="thumb-title">${d.name}</span>
+          </div>
+          <div class="thumb-num">${String(i+1).padStart(2,'0')} / 07</div>
+          <div class="thumb-tag">${d.tag}</div>
+        </div>
+        <div class="info">
+          <div class="info-left">
+            <div class="info-name">${d.name}</div>
+            <div class="info-sub">${d.sub}</div>
+          </div>
+          <div class="arrow">→</div>
+        </div>
+      </a>`).join('');
+  </script>
+</body>
+</html>
