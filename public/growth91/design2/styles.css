@@ -42,8 +42,9 @@ h1 span{color:#f97316}
 .hbtns{display:flex;align-items:center;gap:8px;margin-bottom:40px;flex-wrap:wrap}
 .hstats{display:flex;gap:20px;flex-wrap:wrap}
 .hs{display:flex;flex-direction:column;gap:1px}
+.hs-num{display:flex;align-items:baseline;gap:2px;line-height:1}
 .hs b{font-size:24px;font-weight:900;color:#fff;line-height:1}
-.hs span{font-size:16px;font-weight:900;color:#f97316;display:inline}
+.hs span{font-size:16px;font-weight:900;color:#f97316}
 .hs small{font-size:10px;color:rgba(255,255,255,.45);text-transform:uppercase;letter-spacing:.08em;margin-top:3px}
 .hv{font-size:24px;font-weight:900;color:#fff;line-height:1}
 .h-right{width:50%;background:#f8f9ff;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:80px clamp(24px,4vw,60px);gap:20px}

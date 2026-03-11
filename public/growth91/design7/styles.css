@@ -45,12 +45,13 @@ h1{font-size:clamp(40px,6vw,72px);font-weight:900;line-height:1.02;letter-spacin
 h1 span{color:#f97316}
 .hero-content>p{font-size:17px;color:#6b7280;line-height:1.7;max-width:600px;margin:0 auto 32px}
 .hbtns{display:flex;align-items:center;justify-content:center;gap:12px;margin-bottom:44px;flex-wrap:wrap}
-.hero-metrics{display:flex;align-items:center;justify-content:center;gap:0;padding:24px 0;border-top:1px solid #f0f0f0;border-bottom:1px solid #f0f0f0;flex-wrap:wrap}
-.hm{display:flex;flex-direction:column;align-items:center;gap:2px;padding:0 28px;text-align:center}
-.hmv{font-size:28px;font-weight:900;color:#1a1069;line-height:1}
-.hmp{font-size:18px;font-weight:900;color:#f97316;display:inline}
-.hm small{font-size:11px;color:#9ca3af;text-transform:uppercase;letter-spacing:.08em;margin-top:3px}
-.hm-sep{width:1px;height:40px;background:#f0f0f0}
+.hero-metrics{display:flex;align-items:center;justify-content:center;gap:0;padding:24px 0;border-top:1px solid #f0f0f0;border-bottom:1px solid #f0f0f0;flex-wrap:nowrap;overflow:hidden}
+.hm{display:flex;flex-direction:column;align-items:center;gap:2px;padding:0 clamp(12px,2vw,28px);text-align:center;flex-shrink:0}
+.hm-num{display:flex;align-items:baseline;gap:2px;line-height:1;white-space:nowrap}
+.hmv{font-size:clamp(20px,2.5vw,28px);font-weight:900;color:#1a1069;line-height:1;white-space:nowrap}
+.hmp{font-size:clamp(14px,1.8vw,18px);font-weight:900;color:#f97316}
+.hm small{font-size:11px;color:#9ca3af;text-transform:uppercase;letter-spacing:.08em;margin-top:3px;white-space:nowrap}
+.hm-sep{width:1px;height:40px;background:#f0f0f0;flex-shrink:0}
 .hero-cards{display:flex;gap:16px;justify-content:center;padding:32px clamp(20px,5vw,60px);flex-wrap:wrap}
 .hcard{background:#fff;border:1.5px solid #e8e5f5;border-radius:14px;padding:16px 20px;min-width:240px;flex:1;max-width:300px;transition:all .3s}
 .hcard:hover{border-color:#1a1069;box-shadow:0 8px 24px rgba(26,16,105,.1);transform:translateY(-3px)}

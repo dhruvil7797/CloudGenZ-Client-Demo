@@ -34,9 +34,9 @@ h2{font-size:clamp(26px,3.5vw,40px);font-weight:800;line-height:1.15;letter-spac
 #mb span{display:block;width:22px;height:2px;background:#fff;border-radius:2px}
 
 /* HERO — FULL VIEWPORT KINETIC */
-.hero{background:linear-gradient(150deg,#0a084a 0%,#1a1069 50%,#2a1880 100%);min-height:100vh;display:flex;flex-direction:column;justify-content:center;padding:80px clamp(20px,6vw,80px) 0;position:relative;overflow:hidden}
+.hero{background:linear-gradient(150deg,#0a084a 0%,#1a1069 50%,#2a1880 100%);min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:80px clamp(20px,6vw,80px) 0;position:relative;overflow:hidden;width:100%}
 .hero::after{content:'';position:absolute;inset:0;background:radial-gradient(circle at 70% 50%,rgba(249,115,22,.06),transparent 60%);pointer-events:none}
-.hero-inner{position:relative;z-index:1;max-width:1000px}
+.hero-inner{position:relative;z-index:1;max-width:1000px;width:100%}
 .hero-meta{font-size:13px;color:rgba(255,255,255,.5);font-weight:500;letter-spacing:.04em;margin-bottom:24px}
 h1{font-size:clamp(56px,9vw,120px);font-weight:900;line-height:.95;letter-spacing:-.05em;color:#fff;margin-bottom:48px;display:flex;flex-direction:column}
 h1 .line1{opacity:.85}
@@ -48,8 +48,9 @@ h1 .line3{-webkit-text-stroke:2px #fff;color:transparent;font-style:italic}
 .hbtns{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
 .hero-stats{display:flex;gap:32px;background:rgba(255,255,255,.06);border-top:1px solid rgba(255,255,255,.1);padding:22px clamp(20px,6vw,80px);margin:36px -6vw 0;flex-wrap:wrap}
 .hs{display:flex;flex-direction:column;gap:2px}
+.hs-num{display:flex;align-items:baseline;gap:2px;line-height:1}
 .hs b{font-size:26px;font-weight:900;color:#fff;line-height:1}
-.hs span{font-size:16px;font-weight:900;color:#f97316;display:inline}
+.hs span{font-size:16px;font-weight:900;color:#f97316}
 .hs small{font-size:11px;color:rgba(255,255,255,.4);text-transform:uppercase;letter-spacing:.08em;margin-top:3px}
 .scroll-cue{position:absolute;bottom:24px;right:clamp(20px,6vw,80px);font-size:12px;color:rgba(255,255,255,.35);font-weight:500;letter-spacing:.06em;writing-mode:vertical-rl}
 
