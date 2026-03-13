@@ -93,7 +93,7 @@ body { font-family: 'Nunito', 'Inter', sans-serif; background: #fff; overflow-x:
 
 /* SERVICES WARM */
 .services-warm { position: relative; padding: 88px 0; }
-.services-bg { position: absolute; inset: 0; background: url('https://images.unsplash.com/photo-1564578049-19d0de88fe10?w=1600&q=80') center/cover; }
+.services-bg { position: absolute; inset: 0; background: url('https://maritimemag.com/wp-content/uploads/2025/05/HalifaxONE-Stork-Aerial-scaled.jpg') center/cover; }
 .services-warm::before { content: ''; position: absolute; inset: 0; background: rgba(28,46,107,.82); z-index: 1; }
 .services-warm .container { position: relative; z-index: 2; }
 .sw-header { text-align: center; margin-bottom: 52px; }

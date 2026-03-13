@@ -52,7 +52,7 @@ body { font-family: 'Nunito', 'Inter', sans-serif; color: var(--text-dark); back
 .nav-search:hover { background: var(--gray-mid); }
 
 /* ---- HERO ---- */
-.hero { position: relative; height: 90vh; min-height: 580px; display: flex; align-items: center; background: url('https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=1600&q=85') center/cover no-repeat, linear-gradient(135deg, #1a2660 0%, #2d3580 100%); overflow: hidden; }
+.hero { position: relative; height: 90vh; min-height: 580px; display: flex; align-items: center; background: url('https://maritimemag.com/wp-content/uploads/2025/05/HalifaxONE-Stork-Aerial-scaled.jpg') center/cover no-repeat, linear-gradient(135deg, #1a2660 0%, #2d3580 100%); overflow: hidden; }
 .hero-overlay { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(28,46,107,.82) 0%, rgba(28,46,107,.55) 55%, rgba(28,46,107,.2) 100%); }
 .hero-content { position: relative; z-index: 2; padding: 0 60px; max-width: 680px; }
 .hero-eyebrow { color: var(--coral); font-size: 14px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 16px; }
@@ -186,7 +186,7 @@ body { font-family: 'Nunito', 'Inter', sans-serif; color: var(--text-dark); back
 /* ---- FOOTER ---- */
 .footer { background: var(--navy-dark); padding: 60px 0 0; }
 .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 48px; padding-bottom: 48px; border-bottom: 1px solid rgba(255,255,255,.1); }
-.footer-logo { height: 70px; object-fit: contain; margin-bottom: 16px; filter: brightness(0) invert(1); }
+.footer-logo { height: 70px; object-fit: contain; margin-bottom: 16px;}
 .footer-mission { color: white; font-weight: 800; font-size: 15px; margin-bottom: 12px; }
 .footer-tagline { color: rgba(255,255,255,.65); font-size: 14px; line-height: 1.7; }
 .footer-nav { display: flex; flex-direction: column; gap: 12px; padding-top: 8px; }
