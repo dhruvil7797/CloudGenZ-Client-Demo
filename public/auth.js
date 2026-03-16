@@ -40,6 +40,11 @@ const users = {
         redirectTo: 'mtsc/',
         projectName: 'mtsc'
     },
+    'divija': {
+        password: 'divija2026',
+        redirectTo: 'divija/',
+        projectName: 'divija'
+    },
     // Add more users as needed
     // 'username': { password: 'password', redirectTo: 'project-folder/index.html', projectName: 'Project Name' }
 };
